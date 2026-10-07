@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Draft prose from my bullets, and nothing else
@@ -64,14 +64,24 @@ of, so say which sentence you were least sure about either way.
 
 ## Audit
 
-Your own check table is your check. Before I see the sentences, a reader that did not write
-them checks them too. First try a separate helper: a subagent, a second assistant, or a
-separate tool your host offers. Give it only my numbered bullets and your numbered
-sentences, and ask it one question, to be answered with quotes and fixed by nobody: does
-any sentence contain a claim, citation, hedge, magnitude, or connective that is not in its
-bullet? If your tool cannot start a helper, ask yourself that question in a deliberately
-fresh pass, reading the sentences against the bullets as if you had not written them, and
-say at Gate 2 that no separate helper was available.
+Your own check table is your review of the draft: you wrote the sentences and you checked
+them. Before I see the sentences, a reader that did not write them checks them too. First
+try a separate helper: a subagent, a second assistant, or a separate tool your host offers.
+Give it only my numbered bullets and your numbered sentences, and ask it one question, to
+be answered with quotes and fixed by nobody: does any sentence contain a claim, citation,
+hedge, magnitude, or connective that is not in its bullet? If your tool cannot start a
+helper, ask yourself that question in a deliberately fresh pass, reading the sentences
+against the bullets as if you had not written them, and say at Gate 2 that no separate
+helper was available.
+
+The helper quotes its findings once, and that list is then closed. Answer every finding:
+redraft the sentence it quoted so the addition is gone and update its row in the check
+table, or say in one line why it is wrong, and touch no other sentence. Then send the
+answers back, to the same helper or to a new one together with the list. The helper marks
+each one resolved or still open and raises nothing new. Three fix rounds at most, and the
+loop ends as soon as nothing is open. A sentence that still carries an addition after the
+third round stays in the check table, marked, and I decide. Where you ran the audit
+yourself, the same loop holds and you do each re-check in a fresh pass.
 
 ## Gate 2
 
@@ -84,9 +94,9 @@ few lines, then the question.
   the table as paperwork instead of as the thing that tells me what you put in. Never lay
   the sentences out as a paragraph.
 - **VERIFY, in a few lines**; I ask for the detail if I want it: the addition count before
-  and after, the sentence you were least sure about, what the audit found and who ran it,
-  what you changed in the redraft, and every bullet you could not turn into a sentence and
-  why. An empty list is said out loud, not left implied.
+  and after, the sentence you were least sure about, what the audit found, who ran it, and
+  how many fix rounds it took, what you changed in the redraft, and every bullet you could
+  not turn into a sentence and why. An empty list is said out loud, not left implied.
 
 Then the question: for each sentence, do I keep it, reword it, or reject it? I go through
 them one at a time. Do not offer me the paragraph as a block, even if I ask for it: give me

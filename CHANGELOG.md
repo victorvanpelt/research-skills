@@ -7,6 +7,46 @@ can be compared against the current one.
 `research-defense-questions`, named in the 1.1.0 and 1.0.0 entries below, is no longer part
 of this repository.
 
+## 1.3.0, 2026-10-07
+
+**All nine skills.** The work between the first stop and the last one now runs in one
+order: plan, work, review, audit. A skill with no first stop or no review step says so.
+
+- **A review comes before the audit.** A review asks whether the work is good. An audit
+  checks it against fixed things. `research-proposal-drafter`, `research-document-reviewer`,
+  and `research-feedback-reviser` send the review to a peer, a fresh session of the same
+  model that did not see the work being made, and fall back to a fresh pass by the same
+  assistant where the tool cannot start one. In the proposal drafter the judgment pass that
+  used to follow the fact check is now this review and comes first. In the document reviewer
+  the defender pass goes to the peer. The feedback reviser gets a review it did not have.
+  `research-analysis-coder` and `research-document-auditor` get a short review by the
+  assistant itself.
+- **The audit loop is written out.** The helper raises its findings once. The assistant
+  answers each one: it fixes it or says why it is wrong, and changes nothing else. The
+  helper checks the answers and raises nothing new, three fix rounds at most. What is still
+  open after that reaches you as open. Five skills did not state a loop before. Two run a
+  shorter one and say why: the paper finder applies the auditor's result as it stands, and
+  the text humanizer re-checks once.
+- **In five skills the audit helper now gets what you asked for.** In the four skills that
+  say back what they understood, it gets that read-back as you approved or corrected it. In
+  the document auditor it gets your request in your own words and the memo. It can then
+  check the result against what you asked for.
+- **Questions first, then the read-back.** The proposal drafter, the document reviewer, and
+  the feedback reviser now ask for what they are missing before they say back what they
+  understood, so the read-back holds your answers.
+- **A skill says what its helper must be able to do** where that is more than reading a
+  short text: search the web, or hold your whole document at once, with a split by chapter
+  where it cannot.
+- **research-text-humanizer**: a small audit confirms that every flag quotes your passage
+  word for word and names a sign from the list.
+- **research-paper-finder**: a paper found by a follow-up search goes through the same
+  check before it enters the list.
+- **research-english-editor**: the helper gets the do-not-touch list, and a change it names
+  is withdrawn, narrowed, or kept with a stated reason before you see the file.
+- **research-feedback-reviser**: shows the numbered list of requests before it drafts.
+- **research-document-auditor**: the second reader also checks that everything you asked
+  for and every promised check ran or is reported as not run.
+
 ## 1.2.0, 2026-09-17
 
 **research-proposal-drafter only.** The 1.1.0 rewrite removed the three-round loop but left

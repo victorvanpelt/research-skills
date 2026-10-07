@@ -15,7 +15,7 @@ compatibility: >-
   editable original gets a numbered list of changes rather than a marked-up document.
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Copy-edit my academic writing in US English
@@ -26,6 +26,8 @@ I stop you once, after the edit. There is no gate before the work, on purpose: w
 and may not change is written out in full below, so this is a fixed set of corrections
 applied to one document rather than a reading of what I asked for. And I could not approve a
 marked-up document before it exists.
+There is no separate review step either: every change reaches me as a numbered proposal that
+I accept or reject, so the reviewer of this edit is me.
 
 One rule stands above the rest. **No change is ever accepted for me.** Every change you make
 arrives unaccepted, numbered, with my original text still there next to it, and it becomes part
@@ -156,11 +158,21 @@ If it would not, something is missing from a marker, and you fix that before I s
 
 3. Edit the whole text. Before you hand it back, have the marked text read by a reader who
    did not edit it. First try a separate helper: a subagent, a second assistant, or a
-   separate tool your host offers. Give it only my original and the marked text, and ask
-   it one question, answered by change number and fixed by nobody: did the meaning, the
-   content, or my terminology change anywhere? If your tool cannot start a helper, ask
-   yourself that question in a deliberately fresh pass, reading the changes as if you had
-   not made them, and say so in the hand-back.
+   separate tool your host offers. Give it only my original, the marked text, and the
+   do-not-touch list from step 2, and ask it one question, answered by change number and
+   fixed by nobody: did the meaning, the content, or a term on that list change anywhere?
+   For a long document, split it by chapter across helpers. If your tool cannot start a
+   helper, ask yourself that question in a deliberately fresh pass, reading the changes as
+   if you had not made them, and say so in the hand-back.
+
+   The helper names its change numbers once, and that list is then closed. For each number
+   on it, withdraw the change, narrow it until my meaning is back, or keep it and say why
+   in five words, and touch nothing else. Then send those numbers back, to the same helper
+   or to a new one together with the list: it marks each one resolved or still open and
+   names no new number. Three fix rounds at most, and the loop ends as soon as nothing is
+   open. A number still open after the third round stays in the list, marked, and I decide.
+   Where you asked yourself the question, the same loop holds and you do each re-check in a
+   fresh pass.
 
    Then hand back, in one message, the marked document and the change list first, and the
    checks in a few lines.
@@ -171,20 +183,20 @@ If it would not, something is missing from a marker, and you fix that before I s
      sentence, or two adjacent sentences when you split or merge them.
    - **The numbered list of changes**: for each one, the original phrase, your replacement,
      whether it is a Correct or an Improve, and the reason in five words or fewer. Mark the
-     numbers the audit flagged.
+     numbers the audit named, and say what you did about each.
    - **The questions**, numbered separately, from the Ask group above.
    - **A few lines on the checks**, and I ask for the detail if I want it: the heading count
      and the paragraph count in the marked file against the text I gave you, both numbers
      written out; every term on the do-not-touch list, with its count before and after; that
      you checked, rather than assumed, that rejecting every single change would give me back
-     my own document word for word; and who ran the audit. If a count
-     differs or the reject-all check fails, fix the markers before I see the file, and tell
-     me what was wrong.
+     my own document word for word; who ran the audit, and how many fix rounds it took. If
+     a count differs or the reject-all check fails, fix the markers before I see the file,
+     and tell me what was wrong.
 
 4. CHECKPOINT, and the question: which numbers do I accept, which do I reject, and which
    of your questions do I want to answer? Nothing is settled until I answer. If I say
    nothing about a number, it is not accepted; ask me about it rather than assuming a yes.
-   This is the only point where you wait for me.
+   Apart from the two questions in step 2, this is the only point where you wait for me.
 
 5. Build the final document from my answers: the accepted changes applied, the rejected ones
    back exactly as I wrote them, my answers to the questions applied as I gave them, and

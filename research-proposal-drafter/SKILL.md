@@ -5,7 +5,8 @@ description: >-
   (what the study tries to find out, why an answer matters and to whom, how it will be
   found). Detects which kind of proposal it is from whether the data is already in hand,
   writes a short plan the author can redirect, finds and checks the references the argument
-  needs, drafts against the plan, and audits the facts before the author sees it. Use when
+  needs, drafts against the plan, and has the draft reviewed and its facts audited before
+  the author sees it. Use when
   the author says "draft my thesis proposal", "help me write my proposal", "sharpen my
   research question", or "turn my research idea into a proposal". Refuses to invent a
   research question.
@@ -15,7 +16,7 @@ compatibility: >-
   every reference as unchecked, and adds none.
 metadata:
   author: Victor van Pelt
-  version: 1.2.0
+  version: 1.3.0
 ---
 
 # Thesis proposal drafter
@@ -31,24 +32,10 @@ below points back to this paragraph rather than repeating it: never report resul
 that does not exist yet, and never let the proposal grow into a results chapter.
 
 I stop you twice: once when you say back what you think I asked, and once when the audited
-proposal comes back. Everything between runs without asking me. If you need me in the
-middle, the plan in Phase 2 was not good enough, and that is a fact about the plan rather
-than a reason to interrupt me.
-
-## Gate 0: say back what you think I asked
-
-Before you plan anything, write down what you think this job is, in five short parts:
-
-- **My words**, quoted exactly, and today's date.
-- **The problem**: what is wrong or missing, as you read it from my words.
-- **The result**: what you will hand me, and how we will know it is right.
-- **The limits**: what you must not change, and what you must not touch.
-- **The open questions**: what you assumed, and the calls only I can make.
-
-Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
-
-CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
-ever make. The same correction after a draft exists is not cheap.
+proposal comes back. Before the first stop you ask me for what you are missing; that is an
+input you cannot supply for me, not a stop on the work. Everything between the two stops
+runs without asking me. If you need me in the middle, the plan in Phase 2 was not good
+enough, and that is a fact about the plan rather than a reason to interrupt me.
 
 ## Rules that hold throughout
 
@@ -100,8 +87,8 @@ have the data in hand?** Three answers, three shapes:
 
 In the same message, ask for anything else I already have: key references, a data source, my
 supervisor's constraints, a required template or length limit, who reads this and what they
-decide, and anything I have already ruled out so you do not propose it back to me. Ask once,
-then work.
+decide, and anything I have already ruled out so you do not propose it back to me. Ask once
+and wait for my answer. Then go to Gate 0 below.
 
 If I give you a written draft instead of three separate answers, do not treat the draft as
 the proposal. Pull my answer to each question out of it and quote the sentences you pulled
@@ -111,8 +98,28 @@ it from, so I can see what the draft will rest on.
 If answer 1 names a topic ("something about sustainability reporting") rather than a relation
 between at least two defined concepts, reply with the three answers quoted word for word,
 one sentence saying why answer 1 is still a topic, and one question asking for the relation.
-Wait. Everything else you proceed on, marked as your assumption, and it travels to the
-hand-off.
+Wait. Everything else you proceed on, marked as your assumption: it goes into the open
+questions at Gate 0 and travels to the hand-off.
+
+## Gate 0: say back what you think I asked
+
+Once Phase 1 has given you my answers, and before you plan anything, write down what you
+think this job is, in five short parts. My answers go into it, so I correct one here if you
+took it wrong:
+
+- **My words**, quoted exactly, with my answers from Phase 1, and today's date.
+- **The problem**: what is wrong or missing, as you read it from my words.
+- **The result**: what you will hand me, which of the three shapes from Phase 1 it takes,
+  and how we will know it is right.
+- **The limits**: what you must not change, and what you must not touch.
+- **The open questions**: what you assumed, and the calls only I can make.
+
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper. These
+five parts, as I approve or correct them, are the Gate 0 read-back. The review and the audit
+check the work against it.
+
+CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
+ever make. The same correction after a draft exists is not cheap.
 
 ## Phase 2: Plan
 
@@ -187,24 +194,63 @@ sentence to delete, not a prediction.
 Draft what the plan says and nothing else. If drafting shows the plan was wrong, change it,
 say in one line what moved and why, and carry that line to the hand-off.
 
-## Phase 5: Audit
+## Phase 5: Review
 
-Two passes, and they are not the same job. A helper can check whether something is so. Only
-you can judge how something reads. Neither pass is a second opinion on the design: a choice
-the plan settled is not a finding, and "the plan chose this and the proposal did it" is a
-pass even where you would have chosen otherwise.
+The draft is judged before its facts are checked. A review asks whether the work is good,
+and there is nothing fixed to compare it against, so it takes a reader who is as strong as
+the writer and who did not write the draft.
 
-**Pass 1, the helper's, and it checks facts.** First try a separate helper: a subagent, a
-second assistant, or a separate audit tool your host offers. Give it only three things, the
-current draft with its reference list, the plan from Phase 2, and the five numbered checks
-below, never this conversation or your reasoning. If your tool cannot start a helper, run these checks
-yourself in a deliberately fresh pass, re-reading the draft from the top as a reader who did
-not write it, and say so at the hand-off.
+First try a peer: a fresh session of the same model you are running on. A peer is as strong
+as you and has no memory of how this draft was made, and a review needs both. A weaker
+helper is not a peer, so never hand the review to one. If you cannot tell that what you can
+start is as strong as you, it is not a peer. Give the peer only three things: the draft
+with its reference list, the plan from Phase 2, and the Gate 0 read-back as I approved or
+corrected it, never this conversation or your reasoning. It must be able to search the web,
+so it can open a source where a citation looks wrong. It reports and rewrites nothing. If
+your tool cannot start such a peer, do the review yourself in a deliberately fresh pass,
+reading the draft from the top as a reader who did not write it, and say at Gate 2 that the
+review was not independent. Never ask me to open a second chat for it.
+
+The review is not a second opinion on the design: a choice the plan settled is not a point
+to raise, and "the plan chose this and the proposal did it" is a pass even where the reader
+would have chosen otherwise. It reads for four things, and each needs a reader rather than
+a lookup:
+
+- **Support for every claim.** Which sentences state something that needs a source and have
+  none, and which citations do not support the sentence they are attached to. A reference
+  that exists is not a reference that supports the claim.
+- **Predictions hold together.** Every prediction has a stated reason behind it, every
+  concept has a measure, and each prediction says what result would count against it.
+- **Academic English.** US spelling, tense, hedging, and anything a reader would trip over,
+  quoted in place.
+- **AI slop.** Filler openers, empty intensifiers, three-part endings, hollow transitions,
+  and sentences that assert importance instead of showing it, quoted in place.
+
+It closes with one list, which is not a verdict: every causal verb the proposal uses about
+its own study, quoted; every concept measured in a way that could reasonably be measured
+otherwise; anything labeled exploratory; and any source that is standing in for a better
+one.
+
+Then you revise, once. Answer every point of the review: change the draft, or say in one
+sentence why not. Fix what plainly fails, decide what you can on the closing list, and
+carry the rest of that list to me as mine. The review is one round, never a loop.
+
+## Phase 6: Audit
+
+A helper can check whether something is so, and that is all this phase asks of it. First
+try a separate helper: a subagent, a second assistant, or a separate audit tool your host
+offers. It must be able to search the web. Give it only four things: the revised draft with
+its reference list, the plan from Phase 2, the Gate 0 read-back as I approved or corrected
+it, and the five numbered checks below, never this conversation or your reasoning. If your
+tool cannot start a helper that can do this, run these checks yourself in a deliberately
+fresh pass, re-reading the draft from the top as a reader who did not write it, and say so
+at the hand-off.
 
 The five checks report and repair nothing:
 
-1. **The proposal delivers what the plan promised.** Every item the plan named is in the
-   proposal, and anything in the proposal the plan never called for is flagged.
+1. **The proposal delivers what I asked for and what the plan promised.** Everything the
+   read-back and the plan named is in the proposal, and anything in the proposal that
+   neither called for is flagged.
 2. **References resolve.** Does every entry resolve to a real work? Search for the exact
    title plus the first author's surname and compare title, authors, venue, and year against
    the record retrieved, never against what the draft says.
@@ -220,29 +266,15 @@ The five checks report and repair nothing:
 Nothing else goes to the helper. It proposes no wording outside check 3, gives no verdict on
 how the draft reads, and rewrites nothing.
 
-**Pass 2, yours, and it is judgment.** Set your own draft aside and read it again as a reader
-who did not write it. Four things, and each needs a reader rather than a lookup:
-
-- **Support for every claim.** Which sentences state something that needs a source and have
-  none, and which citations do not support the sentence they are attached to. A reference
-  that exists is not a reference that supports the claim.
-- **Predictions hold together.** Every prediction has a stated reason behind it, every
-  concept has a measure, and each prediction says what result would count against it.
-- **Academic English.** US spelling, tense, hedging, and anything a reader would trip over,
-  quoted in place.
-- **AI slop.** Filler openers, empty intensifiers, three-part endings, hollow transitions,
-  and sentences that assert importance instead of showing it, quoted in place.
-
-Then build one list, which is not a verdict and which you do not act on alone: every causal
-verb the proposal uses about its own study, quoted; every concept measured in a way that
-could reasonably be measured otherwise; anything labeled exploratory; and any source that is
-standing in for a better one. Decide what you can, fix what plainly fails, and carry the rest
-to me as mine.
-
-Fix what either pass found and nothing else. A second round rechecks only the first round's
-list and opens nothing new; three rounds at most. A problem that was there at round 1 and
-nobody noticed is reported at the hand-off as an observation, never fed back into the loop.
-Whatever is still contested after three rounds comes to me with both positions stated.
+The helper raises its findings once, and that list is then closed. Answer every finding:
+fix it, or say in one line why it is wrong, and change nothing else. Then send the answers
+back, to the same helper or to a new one together with the list. The helper marks each
+finding resolved or still open and raises nothing new; a fix that broke something else
+leaves its finding open. Three fix rounds at most, and the loop ends as soon as nothing is
+open. A problem that was there from the start and that nobody listed is reported at Gate 2
+as an observation, never added to the list. Whatever is still open after the third round
+comes to me at Gate 2 as open, with both positions stated. Where you ran the audit
+yourself, the same loop holds and you do each re-check in a fresh pass.
 
 ## Gate 2
 
@@ -259,13 +291,16 @@ comments, then the four things, then the question.
 - **VERIFY, the four things**, in a few lines; I ask for the detail if I want it:
   - *What it is*: the word count without the reference list, against the 700 to 1,000 target,
     and which shape from Phase 1 it was written in.
-  - *What the audit found*: the counts per check, the findings that mattered, and who ran
-    pass 1.
-  - *What changed in response*: including anything you changed that no check asked for, and
+  - *What the review and the audit found*: the review points that mattered and who ran the
+    review; the audit counts per check, the findings that mattered, who ran the audit, and
+    how many fix rounds it took.
+  - *What changed in response*: including each review point you did not act on, with your
+    one-line reason, anything you changed that neither the review nor a check asked for, and
     any line where the draft moved away from the plan.
   - *What is still open*: `[I NEED TO DECIDE]` markers, assumptions you proceeded on, the
-    list from pass 2 that is mine to settle, references you could not confirm, and anything
-    still contested after three rounds. An empty list is said out loud, not left implied.
+    list from the review that is mine to settle, references you could not confirm, and
+    anything still open after the third fix round. An empty list is said out loud, not left
+    implied.
 
 Log the AI use: tool, date, purpose.
 

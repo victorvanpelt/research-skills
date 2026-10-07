@@ -39,6 +39,9 @@ Report the three groups by name. For every paper in the corrected or
 not-found group, quote what the candidate list said and what your own search
 returned.
 
+If you are told this is a follow-up check, check only the papers handed to you and write
+no coverage section.
+
 Close with a short section headed "Coverage the search may have missed": any
 subtopic you noticed while auditing that the original search terms do not
 appear to reach. This is a note for the searcher, not a request for you to

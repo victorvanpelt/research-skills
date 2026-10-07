@@ -3,7 +3,8 @@ name: research-feedback-reviser
 description: >-
   Turns supervisor comments, seminar feedback, referee reports, or marker notes into a
   numbered list of separate requests, says what each one asks of the author's document, then
-  drafts the smallest change that meets each one and has the drafts checked in a fresh pass.
+  drafts the smallest change that meets each one and has the drafts reviewed and checked
+  before the author sees them.
   Hands back the drafts, the alternatives it did not take, the items it could not draft, and
   a one-line-per-item record for the next supervision meeting, for the author to accept or
   reject one at a time. Use when the author says "my supervisor sent comments", "work through
@@ -15,7 +16,7 @@ compatibility: >-
   and adds no new reference.
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Work through feedback without losing control of it
@@ -26,30 +27,35 @@ change that meets each piece, and hand me the drafts. Nothing enters my document
 say so.
 
 I stop you twice: once when you say back what you think I asked, and once when the drafted
-changes come back. Everything between is yours. Deciding once, with drafts in front of me,
-beats deciding twice, once in the abstract and once again on the page.
-
-## Gate 0: say back what you think I asked
-
-Before you plan anything, write down what you think this job is, in five short parts:
-
-- **My words**, quoted exactly, and today's date.
-- **The problem**: what is wrong or missing, as you read it from my words.
-- **The result**: what you will hand me, and how we will know it is right.
-- **The limits**: what you must not change, and what you must not touch.
-- **The open questions**: what you assumed, and the calls only I can make.
-
-Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
-
-CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
-ever make. The same correction after the drafts exist is not cheap.
+changes come back. Before the first stop you ask me once for what you are missing; that is
+an input you cannot supply for me, not a stop on the work. Everything between the two stops
+is yours. Deciding once, with drafts in front of me, beats deciding twice, once in the
+abstract and once again on the page.
 
 ## Intake, one round
 
 Take whatever I gave you and ask only for what is missing, in one message: the feedback, the
 document it refers to, what the document is, and who wrote the feedback. Who wrote it changes
 what a sensible response looks like: a supervisor's comment is close to binding, a seminar
-attendee's is advice. Ask once, then work.
+attendee's is advice. Ask once and wait for my answer. Then go to Gate 0 below.
+
+## Gate 0: say back what you think I asked
+
+Once the intake has given you what was missing, and before you plan anything, write down
+what you think this job is, in five short parts:
+
+- **My words**, quoted exactly, with what I answered at the intake, and today's date.
+- **The problem**: what is wrong or missing, as you read it from my words.
+- **The result**: what you will hand me, and how we will know it is right.
+- **The limits**: what you must not change, and what you must not touch.
+- **The open questions**: what you assumed, and the calls only I can make.
+
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper. These
+five parts, as I approve or correct them, are the Gate 0 read-back. The review and the audit
+check the work against it.
+
+CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
+ever make. The same correction after the drafts exist is not cheap.
 
 ## Take the feedback apart
 
@@ -71,6 +77,10 @@ section, this claim, this table), never a restatement of the comment.
 undo a decision recorded elsewhere in my document. Where one item cannot be settled until
 another is (a rewritten hypothesis before the results that test it, new data before the table
 that reports it), say so and put the blocking item first.
+
+**Show me the numbered list and carry it straight into the drafts.** Do not wait. I approved
+what this job is at Gate 0, so the list is a record of the work you are about to do, not a
+second question. If I stop you on it anyway, amend it, show what moved, and continue.
 
 ## Draft
 
@@ -117,18 +127,54 @@ number and where it goes; a task, with what it waits on; a question for my super
 blocked by another item, naming it. This is what I bring to the next supervision meeting, and
 I fill in what I decided after I have been through the drafts.
 
+## Review
+
+The drafts are judged before they are checked. A review asks whether the work is good, and
+there is nothing fixed to compare it against, so it takes a reader who is as strong as the
+writer and who did not write the drafts.
+
+First try a peer: a fresh session of the same model you are running on. A peer is as strong
+as you and has no memory of how the drafts were made, and a review needs both. A weaker
+helper is not a peer, so never hand the review to one. If you cannot tell that what you can
+start is as strong as you, it is not a peer. Give the peer only the feedback, my document,
+the numbered items, the drafts, the response record, and the Gate 0 read-back as I approved
+or corrected it, never this conversation or your reasoning. It reports and rewrites
+nothing. If your tool cannot start a peer, do the review yourself in a deliberately fresh
+pass, reading each draft against its item as a reader who did not write it, and say at
+Gate 2 that the review was not independent. Never ask me to open a second chat for it.
+
+The review reads each draft for four things: does it meet what its item asks of my
+document; is it the smallest change that does, or is a smaller one in reach; does it sound
+like the sentences around it in my document; and is there a genuinely different way to
+answer the comment that I should see named and do not. It also says where an item looks
+split or classified wrongly. It never says whether a comment is right. That call is mine.
+
+Then you revise, once. Answer every point of the review: change the draft or the record, or
+say in one sentence why not. The review is one round, never a loop.
+
 ## Audit
 
-A reader that did not write the drafts checks them. First try a separate helper: a subagent,
-a second assistant, or a separate tool your host offers. Give it only the feedback, the
-numbered items, the drafts, and the response record, and ask it to report and fix nothing:
-does every item have a draft, a task, a question, or a stated block; does every draft name
-where it goes; did any draft go wider than its item; is everything a draft added listed under
-it; does every citation a draft adds exist; and does the response record match the drafts. If
-your tool cannot start a helper, run the same check yourself in a deliberately fresh pass and
-say so at the hand-off. Fix what it found and nothing else; a second round rechecks only the
-first round's list, and a third at most. Whatever is still contested after that comes to me
-with both positions stated.
+A reader that did not write the drafts checks them against fixed things. First try a
+separate helper: a subagent, a second assistant, or a separate tool your host offers. Where
+a draft adds a citation, the helper must be able to search the web. Give it only the
+feedback, my document, the numbered items, the drafts, the response record, and the Gate 0
+read-back as I approved or corrected it, and ask it to report and fix nothing: does every
+item have a draft, a task, a question, or a stated block; does every draft name where it
+goes; did any draft go wider than its item; is everything a draft added listed under it;
+does every citation a draft adds exist; does the response record match the drafts; and do
+the drafts and the record cover what the read-back asked for. If your tool cannot start a
+helper that can do this, run the same check yourself in a deliberately fresh pass and say
+so at the hand-off.
+
+The helper raises its findings once, and that list is then closed. Answer every finding:
+fix it, or say in one line why it is wrong, and change nothing else. Then send the answers
+back, to the same helper or to a new one together with the list. The helper marks each
+finding resolved or still open and raises nothing new; a fix that broke something else
+leaves its finding open. Three fix rounds at most, and the loop ends as soon as nothing is
+open. A problem that was there from the start and that nobody listed is reported at Gate 2
+as an observation, never added to the list. Whatever is still open after the third round
+comes to me at Gate 2 as open, with both positions stated. Where you ran the audit
+yourself, the same loop holds and you do each re-check in a fresh pass.
 
 ## Gate 2
 
@@ -139,10 +185,12 @@ Lead with the drafts and the response record, then a few lines, then the questio
   as a draft and not as a decision, with the place in my document it belongs, and with its
   one-line alternative underneath where one exists.
 - **VERIFY, in a few lines**; I ask for the detail if I want it: how many items you found and
-  how they split across the four kinds; what the audit found and who ran it; what changed in
-  response; and what is still open: the items you did not draft and what each is waiting on,
-  the questions for my supervisor, the collisions you flagged, and any item where you were
-  unsure which way was smallest. An empty list is said out loud, not left implied.
+  how they split across the four kinds; what the review found and who ran it; what the audit
+  found, who ran it, and how many fix rounds it took; what changed in response, and each
+  review point you did not act on, with your one-line reason; and what is still open: the
+  items you did not draft and what each is waiting on, the questions for my supervisor, the
+  collisions you flagged, and any item where you were unsure which way was smallest. An
+  empty list is said out loud, not left implied.
 
 Log the AI use: tool, date, purpose.
 

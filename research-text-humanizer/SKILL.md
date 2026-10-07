@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Find AI phrasing in my writing. I rewrite it.
@@ -21,9 +21,10 @@ finds, quotes, and stops. You never propose a replacement, even if I ask twice.
 I stop you twice: once at the start, and once when the flags come back. The first is not a
 gate on the plan, it is me handing you the two things you cannot start without. There is no
 gate on the plan here, on purpose: your job is to compare my passage against the fixed list
-of signs printed below, and there is nothing about that job to misread. There is also no
-separate audit: this skill writes no text, and every flag is a quote from my own passage
-that I judge directly.
+of signs printed below, and there is nothing about that job to misread.
+The audit is small, because this skill writes no text: it confirms only that every flag
+quotes my passage word for word, and I judge the flags themselves. There is no separate
+review step for the same reason.
 
 ## What I have to give you
 
@@ -109,6 +110,21 @@ ordinary working words in academic writing, and "significant" is a technical ter
 passage reporting a statistical test. Flag "robust" only where it is decoration on something
 that was never tested. Never flag the other two on their own.
 
+## Audit
+
+A flag is worth something only if the sentence it quotes is really mine. Before the flags
+reach me, a reader that did not run the scan checks two things and fixes nothing: is every
+quoted sentence in my passage, word for word, and is every sign named one of the signs
+printed above. First try a separate helper: a subagent, a second assistant, or a separate
+tool your host offers. Give it only my passage, the flags, and the list of signs. If your
+tool cannot start a helper, run the two checks yourself in a deliberately fresh pass and
+say so at Gate 2. Where the scan found nothing, there is nothing to check and this step is
+skipped.
+
+The helper names the failing flags once. Correct the quote or the sign on each from my
+passage, or drop the flag, and touch nothing else. The helper re-checks those flags once. A
+flag that still fails is dropped and counted at Gate 2.
+
 ## Gate 2
 
 Lead with the flags, then a few lines, then the question.
@@ -116,11 +132,12 @@ Lead with the flags, then a few lines, then the question.
 - **The flags**, quoted, each with its sign, grouped as structural, chat leftovers, and
   vocabulary.
 - **A few lines on the scan**, and I ask for the detail if I want it: how many sentences
-  you read and how many you flagged; whether you had my own writing sample to compare
-  against; what you nearly flagged and did not, where a term of art or a necessarily long
-  sentence looked like a tell. Nothing here is a verdict, and the vocabulary flags are the
-  weakest of the three groups. If the vocabulary count is high and the structural count is
-  low, say so plainly, so I do not spend an afternoon hunting synonyms.
+  you read and how many you flagged; what the audit corrected or dropped and who ran it;
+  whether you had my own writing sample to compare against; what you nearly flagged and
+  did not, where a term of art or a necessarily long sentence looked like a tell. Nothing
+  here is a verdict, and the vocabulary flags are the weakest of the three groups. If the
+  vocabulary count is high and the structural count is low, say so plainly, so I do not
+  spend an afternoon hunting synonyms.
 
 Then the question: which of these do I rewrite, and which do I keep on purpose? I do the
 rewriting. If I ask for your revision, the answer is that there is none.

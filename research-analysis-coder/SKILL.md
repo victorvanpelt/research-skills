@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Every number comes from code I can rerun
@@ -53,7 +53,9 @@ Then write down what you think this job is, in five short parts:
 - **The open questions**: what you assumed, and the calls only I can make (how missing
   values are handled, which cases are excluded, which specification).
 
-Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper. These
+five parts, as I approve or correct them, are the Gate 0 read-back. The review and the audit
+check the work against it.
 
 CHECKPOINT: wait. Nothing is written until I answer. This is the cheapest correction I will
 ever make. The same correction after a script has produced numbers is not cheap.
@@ -69,17 +71,36 @@ prints it. No step may depend on anything typed into this conversation.
   where a case disappeared.
 - End the script by printing the checks from Gate 0: the range, the sign, the count.
 
+## Review
+
+This skill writes no plan between Gate 0 and the script, so the review is yours, and it is
+short. Read the script once from the top as the person who will have to defend it to an
+examiner. Two things. Every choice that changes a number (how missing values are handled,
+which cases are excluded, which specification) is either one I made at Gate 0 or is on the
+open list for Gate 2, never filled in quietly. And every step does what its comment says.
+Fix what you find before the audit.
+
 ## Audit
 
 Before you hand the script over, have it read by a reader that did not write it. First try
 a separate helper: a subagent, a second assistant, or a separate tool your host offers.
-Give it only the script and the result line from your Gate 0 intent, and ask it to report
-and fix nothing: does the script compute what that line says, does every function, argument,
-and option it uses exist in that language, does it read the data from disk and write
-nothing back to the source file, and does it print the observation counts and the Gate 0
-checks. If your tool cannot start a helper, run that check yourself in a deliberately fresh
-pass, reading the script from the top as if you had not written it, and say at Gate 2 that
-no separate helper was available.
+Give it only the script and the Gate 0 read-back as I approved or corrected it, and ask it
+to report and fix nothing: does the script compute what the result part of the read-back
+says, does every function, argument, and option it uses exist in that language, does it
+read the data from disk and write nothing back to the source file, and does it print the
+observation counts and the Gate 0 checks. If your tool cannot start a helper, run that
+check yourself in a deliberately fresh pass, reading the script from the top as if you had
+not written it, and say at Gate 2 that no separate helper was available.
+
+The helper raises its findings once, and that list is then closed. Answer every finding:
+fix it, or say in one line why it is wrong, and change nothing else. Then send the answers
+back, to the same helper or to a new one together with the list. The helper marks each
+finding resolved or still open and raises nothing new; a fix that broke something else
+leaves its finding open. Three fix rounds at most, and the loop ends as soon as nothing is
+open. A problem that was there from the start and that nobody listed is reported at Gate 2
+as an observation, never added to the list. Whatever is still open after the third round
+comes to me at Gate 2 as open, with both positions stated. Where you ran the audit
+yourself, the same loop holds and you do each re-check in a fresh pass.
 
 ## Gate 2
 
@@ -88,8 +109,9 @@ Lead with the script, then a few lines on how it was made, then the question.
 - **The script**: save it next to my data with today's date in the file name where your
   tool can write files, and say where it is; where it cannot, show it in full. Add one line
   on what it computes and how to run it.
-- **VERIFY, how it was made**, in a few lines; I ask for the detail if I want it: what the
-  audit found and who ran it; that the script runs top to bottom from a clean start, that
+- **VERIFY, how it was made**, in a few lines; I ask for the detail if I want it: what your
+  own review changed; what the audit found, who ran it, and how many fix rounds it took;
+  that the script runs top to bottom from a clean start, that
   every function, argument, and option you used exists in that language, and that nothing
   in it depends on this conversation; what you changed because of the audit or because my
   instructions conflicted with the data or with each other; and what is still open: any

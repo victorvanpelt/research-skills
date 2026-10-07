@@ -15,7 +15,7 @@ compatibility: >-
   says so and stops rather than returning unverified results.
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Paper finder
@@ -76,13 +76,14 @@ index such as Crossref or OpenAlex, use it before a plain web search: it returns
 metadata instead of you reading it off a page. Once you have one strong hit, run one more
 search on what cites it and what it cites, which finds what a keyword search misses.
 
-**Then check yourself for the obvious miss.** Name two or three things a literature on this
-topic almost certainly contains: a founding study of the main idea, a well-known
-disagreement, a standard method or dataset. Describe each one, and search for that
-description. Never search for a title you remember, and never write one of these names into
-the list as a paper you found; you are testing your search words, not recalling papers. If a
-description returns nothing at all, your words are probably wrong for this field: change
-them and run one more search. Say at the hand-off what you probed for and what came back.
+**Then check yourself for the obvious miss.** This is your own review of the search. Name
+two or three things a literature on this topic almost certainly contains: a founding study
+of the main idea, a well-known disagreement, a standard method or dataset. Describe each
+one, and search for that description. Never search for a title you remember, and never
+write one of these names into the list as a paper you found; you are testing your search
+words, not recalling papers. If a description returns nothing at all, your words are
+probably wrong for this field: change them and run one more search. Say at the hand-off
+what you probed for and what came back.
 
 For each hit, record: exact title, all authors, venue, year, DOI if visible, and the link to
 the result you read it in. A candidate without that link is not a candidate.
@@ -90,18 +91,27 @@ the result you read it in. A candidate without that link is not a candidate.
 ## Audit
 
 The list is checked by a reader that did not build it. First try to run the audit through
-a separate helper: a subagent, a second assistant, or a separate tool your host offers.
-Give it only two things, `references/research-paper-auditor.md` from this folder and the
-candidate list, never your reasoning about why each paper was picked.
+a separate helper: a subagent, a second assistant, or a separate tool your host offers. It
+must be able to search the web. Give it only two things,
+`references/research-paper-auditor.md` from this folder and the candidate list, never your
+reasoning about why each paper was picked.
 
-If your tool cannot start a helper, run the auditor file yourself in a deliberately fresh
-pass: take only the candidate list, search for every paper again as that file says, and
-say at the hand-off that no separate helper was available. A check by the context that
-searched is a weaker check, so it is named as such rather than hidden.
+If your tool cannot start a helper that can do this, run the auditor file yourself in a
+deliberately fresh pass: take only the candidate list, search for every paper again as that
+file says, and say at the hand-off that no separate helper was available. A check by the
+context that searched is a weaker check, so it is named as such rather than hidden.
+
+**Apply the auditor's result as reported, and add no correction of your own.** Correct the
+fields it corrected, from its record, and drop the papers it did not find.
 
 **Act on the auditor's coverage note.** It closes with the subtopics the search terms do not
 appear to reach. Run one more search on each before you hand anything over, and report what
-each returned. A note you print and do not act on moves the work to me.
+each returned. A note you print and do not act on moves the work to me. A paper those
+searches add is a new candidate: send it to the helper for the same check before it enters
+the list, with the same file and one line saying that this is a follow-up check. A
+candidate it does not confirm is listed under the list as not found, never kept. There is
+no further round: you apply the auditor's result as it stands, so there is no fix to
+re-check.
 
 ## Gate 2
 
@@ -118,8 +128,9 @@ Lead with the list, then a few lines on how it was made, then the question.
 - **VERIFY, how it was made**, in a few lines; I ask for the detail if I want it: how many
   candidates you found, how many you dropped and why, how many searches you ran and on
   which wordings, what you probed for in the obvious-miss check and what came back, whether
-  a scholarly index was reachable, who ran the audit, what the auditor's coverage note said
-  and what your follow-up searches returned, and what the search still did not cover: any
+  a scholarly index was reachable, who ran the audit, what the auditor's coverage note
+  said, what your follow-up searches returned, what the audit said about the papers those
+  searches added, and what the search still did not cover: any
   angle of the topic you did not search, and the gap between what I asked for and what you
   confirmed.
   If the count came back thin, name one way I could broaden it: a broader term, a

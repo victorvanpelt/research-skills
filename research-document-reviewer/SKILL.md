@@ -13,7 +13,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # Reviewer
@@ -27,31 +27,34 @@ table, or a citation is in APA form is a separate check I run separately. Say in
 that you noticed such a problem, and keep reviewing.
 
 I stop you twice: once when you say back what you think I asked, before you have read a
-word, and once when the audited review comes back. Everything between runs without asking
-me.
-
-## Gate 0: say back what you think I asked
-
-Before you plan anything, and before you read my document, write down what you think this
-job is, in five short parts:
-
-- **My words**, quoted exactly, and today's date.
-- **The problem**: what is wrong or missing, as you read it from my words.
-- **The result**: what you will hand me, and how we will know it is right.
-- **The limits**: what you must not change, and what you must not touch.
-- **The open questions**: what you assumed, and the calls only I can make.
-
-Do this yourself. Reading an instruction is judgment, so it never goes to a helper.
-
-CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
-ever make. The same correction after a review exists is not cheap.
+word, and once when the audited review comes back. Before the first stop you ask me once
+for what you are missing, if anything is; that is an input you cannot supply for me, not a
+stop on the work. Everything between the two stops runs without asking me.
 
 ## Intake
 
 Take the document and whatever I gave with it: what it is (thesis, chapter, section,
 proposal, paper, essay, report), one sentence on what it is supposed to establish and for
 whom, and anything I already know is unfinished. Ask only for what is missing, in one
-message, and only if you cannot go on without it.
+message, and only if you cannot go on without it. If you asked, wait for my answer.
+
+## Gate 0: say back what you think I asked
+
+Once the intake has given you what was missing, before you plan anything and before you
+read my document, write down what you think this job is, in five short parts:
+
+- **My words**, quoted exactly, with what I answered at the intake, and today's date.
+- **The problem**: what is wrong or missing, as you read it from my words.
+- **The result**: what you will hand me, and how we will know it is right.
+- **The limits**: what you must not change, and what you must not touch.
+- **The open questions**: what you assumed, and the calls only I can make.
+
+Do this yourself. Reading an instruction is judgment, so it never goes to a helper. These
+five parts, as I approve or correct them, are the Gate 0 read-back. The defender pass and
+the audit check the work against it.
+
+CHECKPOINT: wait. Nothing is planned until I answer. This is the cheapest correction I will
+ever make. The same correction after a review exists is not cheap.
 
 ## Read
 
@@ -112,39 +115,63 @@ a later paragraph, a footnote, an earlier section. If it does, drop it.
 
 ## Defender pass
 
-Before the audit, my side gets argued, and you argue it yourself. Do not hand this
-to a helper. Deciding whether a comment survives is a judgment with nothing fixed
-to check it against, and a helper that kills a real concern costs me the comment I
-most needed. Set your draft aside and read my document again from the top as my
-strongest defender would, using what my document actually says and not charity.
+Before the audit, my side gets argued. This is the review step of this skill, and it is
+argued by a reader who did not write the review. Deciding whether a comment survives is a
+judgment with nothing fixed to check it against, so it takes a reader as strong as you.
+First try a peer: a fresh session of the same model you are running on. A peer is as strong
+as you and has no memory of how the review was written, and this pass needs both. A weaker
+helper is not a peer, so never hand this pass to one: a helper that kills a real concern
+costs me the comment I most needed. If you cannot tell that what you can start is as strong
+as you, it is not a peer. Give the peer only three things: my document, the draft review,
+and the Gate 0 read-back as I approved or corrected it, never this conversation or your
+reasoning. It reads my document from the top as my strongest defender would, using what my
+document actually says and not charity, and it rewrites nothing. If your tool cannot start
+a peer, set your draft aside and argue my side yourself in a deliberately fresh pass, and
+say at Gate 2 that the defender pass was not independent. Never ask me to open a second
+chat for it.
 
-Put every main and minor comment through four questions. Is there a reading of my
-document on which the comment is simply wrong? Does my document already answer it
-somewhere you did not look, in a footnote, an appendix, or a later section? Is the
+The defender puts every main and minor comment through four questions. Is there a reading
+of my document on which the comment is simply wrong? Does my document already answer it
+somewhere the review did not look, in a footnote, an appendix, or a later section? Is the
 comment about the document I wrote, or about a different one? Would a second reader
 reach the opposite conclusion? Before a comment saying I failed to do something
-survives, search the footnotes, the appendices, and the limitations for the place I
-did it, and name where you looked.
+survives, the defender searches the footnotes, the appendices, and the limitations for
+the place I did it, and names where it looked.
 
-Give each comment one verdict, with the sentence in my document behind it: survives,
-narrow, or kill. Then apply them: drop the kills, narrow the narrows. Keep a kill
-log, one line per killed comment naming the sentence that killed it, and show it at
-Gate 2, so a timid pass that killed a real concern is visible to me. If a kill hits
-one of the three main comments the briefing named, do not substitute a new one
-silently; redraft it narrower or say at Gate 2 that it fell and why.
+The defender gives each comment one verdict, with the sentence in my document behind it:
+survives, narrow, or kill. Then you revise, once: drop the kills and narrow the narrows, or
+keep a comment against its verdict and say why in one line. Keep a kill log, one line per
+killed comment naming the sentence that killed it, and show it at Gate 2, so a timid pass
+that killed a real concern is visible to me. If a kill hits one of the three main comments
+the briefing named, do not substitute a new one silently; redraft it narrower or say at
+Gate 2 that it fell and why. The defender pass is one round, never a loop.
 
 ## Audit
 
-A reader that did not write the review checks it. First try a separate helper; give it
-only the document and the review, and ask it to report and fix nothing: is every quoted
-sentence really in my document, word for word; does every location it names, page,
-section, table, or figure, point at the right place; is any comment answered elsewhere in
-the document; are there exactly three main comments, at most twenty minor ones, and a
-summary within 300 words. If your tool cannot
-start a helper, run the same check yourself in a deliberately fresh pass and say so at
-Gate 2. Fix what the audit found and nothing else. A second round rechecks only the
-first round's list; three rounds at most, and whatever is still contested after that
-comes to me with both positions.
+A reader that did not write the review checks it against fixed things. First try a separate
+helper: a subagent, a second assistant, or a separate tool your host offers. It must be
+able to hold my whole document at once; where it cannot, split the document by chapter
+across several helpers, give each the comments that quote its chapter, and run the
+answered-elsewhere question yourself across the whole document. Give it only my document,
+the review, the kill log, and the Gate 0 read-back as I approved or corrected it, and ask
+it to report and fix nothing: is every quoted sentence really in my document, word for
+word; does every location it names, page, section, table, or figure, point at the right
+place; is any comment answered elsewhere in the document; are there three main comments,
+or fewer only where the kill log says one fell in the defender pass; are there at most
+twenty minor ones and a summary within 300 words; and does the review cover what the
+read-back asked for and stay out of what it ruled out. If your tool cannot start a helper
+that can do this, run the same check yourself in a deliberately fresh pass and say so at
+Gate 2.
+
+The helper raises its findings once, and that list is then closed. Answer every finding:
+fix it, or say in one line why it is wrong, and change nothing else. Then send the answers
+back, to the same helper or to a new one together with the list. The helper marks each
+finding resolved or still open and raises nothing new; a fix that broke something else
+leaves its finding open. Three fix rounds at most, and the loop ends as soon as nothing is
+open. A problem that was there from the start and that nobody listed is reported at Gate 2
+as an observation, never added to the list. Whatever is still open after the third round
+comes to me at Gate 2 as open, with both positions stated. Where you ran the audit
+yourself, the same loop holds and you do each re-check in a fresh pass.
 
 ## Gate 2
 
@@ -154,8 +181,9 @@ Lead with the review, then a few lines, then the question.
   where it is; where it cannot, show it in full. Above it, the three main comments in
   one sentence each, the number of minor comments, and the count that fell to the cap.
 - **VERIFY, in a few lines**; I ask for the detail if I want it: what the audit found,
-  who ran it, and how many rounds it took; what the defender killed or narrowed, with
-  the count, and any kill you think was a real concern lost to a weak argument, named;
+  who ran it, and how many fix rounds it took; who ran the defender pass, what it killed
+  or narrowed, with the count, any verdict you did not follow and why, and any kill you
+  think was a real concern lost to a weak argument, named;
   and what is still open: judgment calls that are mine, comments that fell, and parts of
   the document you could not judge. An empty list is said out loud, not left implied.
 

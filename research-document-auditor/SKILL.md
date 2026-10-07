@@ -17,7 +17,7 @@ compatibility: >-
   reports those checks as not run rather than guessing.
 metadata:
   author: Victor van Pelt
-  version: 1.1.0
+  version: 1.3.0
 ---
 
 # The check before you hand it in
@@ -167,24 +167,49 @@ cannot support. Medium: wrong, and fixed in a minute once seen, such as a wrong 
 reference, a missing DOI, or a table the text still calls by its old number. Minor: form
 only, such as a comma in a citation or an inconsistent decimal place.
 
+## Review
+
+Before a second reader sees the findings, read them together once yourself. The findings
+are comparisons against fixed things, so this read is yours and the second reader below
+does the confirming. Three things. Merge findings that are one problem reported by two
+checks, and keep the higher severity. Where a memo was written, go back once over the kinds
+of error it said this document most invites, and look for one the checks missed; a miss you
+find goes in as a finding under its check. And read each severity against the three
+definitions above. Change nothing else.
+
 ## Second reader
 
 Before the report reaches me, a reader that ran none of the checks confirms the
 findings. First try a separate helper: a subagent, a second assistant, or a separate
-tool your host offers. Give it only the document, the inputs I supplied, and the
-draft report, and ask it four numbered questions, answered against the document and
-fixed by nobody:
+tool your host offers. It must be able to hold my whole document at once; where it cannot,
+split the document by chapter across several helpers, give each the findings in its
+chapter, and confirm yourself every finding that compares two chapters. Give it only the
+document, the inputs I supplied, my request in my own words, the memo where one was
+written, and the draft report, and ask it five numbered questions, answered against the
+document and fixed by nobody:
 
 1. Is the quoted passage really in my document, word for word?
 2. Is the location right: the page, section, table, or figure it names?
 3. Does the evidence written next to the finding show what the finding says it shows?
 4. Does the severity match the three definitions above? Name every finding whose
    severity does not, and say which of the three it fits instead. Do not change it.
+5. Did everything my request asked for, and every check the memo promised where one was
+   written, either run or get reported as not run, with the reason?
 
-A finding it cannot ground moves to a closing list headed "worth checking yourself,
-not confirmed"; it is never deleted. If your tool cannot start a helper, run those
-four questions yourself in a deliberately fresh read of the report against the
-document, and say so at Gate 2.
+If your tool cannot start a helper that can do this, run those five questions yourself in
+a deliberately fresh read of the report against the document, and say so at Gate 2.
+
+The reader raises its points once, and that list is then closed. Its severity points from
+question 4 stay out of this loop: they are your call, below. Answer every other point: fix
+it (a quote copied wrongly, a wrong location, an evidence line that does not show what the
+finding says, a check the report left out), or say in one line why it is wrong, and change
+nothing else. Then send the answers back, to the same reader or to a new one together with
+the list. The reader marks each point resolved or still open and raises nothing new; a fix
+that broke something else leaves its point open. Three fix rounds at most, and the loop
+ends as soon as nothing is open. A finding it still cannot ground after the third round
+moves to a closing list headed "worth checking yourself, not confirmed"; it is never
+deleted. Where you ran the five questions yourself, the same loop holds and you do each
+re-check in a fresh pass.
 
 **Then one call is yours, not the reader's.** For every severity it named in question
 4, you adjust it or leave it, and you say at Gate 2 which ones you moved and which you
@@ -226,8 +251,9 @@ Lead with the report, then a few lines, then the question.
   entry by name; how many claims stand unsupported and how many facts you checked; how
   many numbers checked and how many matched; how many statistical checks run and how many
   failed; how many consistency problems, overclaims, and format rules met; which checks
-  you could not run and why; what the second reader changed and who ran it; and the count
-  in the not-confirmed list. Never report a clean result you did not actually establish.
+  you could not run and why; what your own review merged or added; what the second reader
+  raised, who ran it, and how many fix rounds it took; and the count in the not-confirmed
+  list. Never report a clean result you did not actually establish.
   Log the AI use: tool, date, purpose.
 
 Then the question: which findings do I accept, which do I reject with a reason, and does
