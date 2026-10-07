@@ -89,14 +89,15 @@ Write the review in this fixed structure and no other:
 - **Summary**, at most 300 words: what the document does, what it claims, and the line
   of the review.
 - **Main comments**, exactly three, under these headings: Comment 1, argument and
-  contribution (does the document establish what it claims to add, or does a claim rest
-  on a step it never makes); Comment 2, theory and reasoning (does the logic behind the
-  predictions or claims hold, and is there a simpler explanation); Comment 3, evidence
-  and method (does the design or the evidence answer the question asked, and where does
-  a claim outrun what was shown). Each is two to four paragraphs: the quoted sentences
-  it rests on, with page or section, what is wrong, and the concrete step that would
-  resolve it. A main comment must name what would resolve it; if it cannot, it is a
-  minor comment.
+  contribution (does the document establish what it claims to add, or does a claim rest on a
+  step it never makes); Comment 2, theory and reasoning (does the logic behind the
+  predictions or claims hold, and is there a simpler explanation); Comment 3, evidence and
+  method (does the design or the evidence answer the question asked, and where does a claim
+  outrun what was shown). Each is two to four paragraphs: the quoted sentences it rests on,
+  with page or section, what is wrong, and the concrete step that would resolve it. A main
+  comment must name what would resolve it; if it cannot, it is a minor comment. The step is
+  one I can take in this document with what I have. Where only new data or a new study could
+  resolve a comment, say so, and say what I can honestly claim without it.
 - **Other comments**, at most twenty, in the order they appear in the document, one or two
   sentences each, every one anchored to a quoted sentence. Twenty is a ceiling, not a
   target: one is fine, and so is nine. If the read produced more than twenty, rank them by
@@ -142,9 +143,11 @@ The defender gives each comment one verdict, with the sentence in my document be
 survives, narrow, or kill. Then you revise, once: drop the kills and narrow the narrows, or
 keep a comment against its verdict and say why in one line. Keep a kill log, one line per
 killed comment naming the sentence that killed it, and show it at Gate 2, so a timid pass
-that killed a real concern is visible to me. If a kill hits one of the three main comments
-the briefing named, do not substitute a new one silently; redraft it narrower or say at
-Gate 2 that it fell and why. The defender pass is one round, never a loop.
+that killed a real concern is visible to me. A kill that cannot name the sentence in my
+document that answers the comment is not a kill: the comment stays. If a kill hits one of
+the three main comments the briefing named, do not substitute a new one silently; redraft it
+narrower or say at Gate 2 that it fell and why. The defender pass is one round, never a
+loop.
 
 ## Audit
 
@@ -163,15 +166,17 @@ read-back asked for and stay out of what it ruled out. If your tool cannot start
 that can do this, run the same check yourself in a deliberately fresh pass and say so at
 Gate 2.
 
-The helper raises its findings once, and that list is then closed. Answer every finding:
-fix it, or say in one line why it is wrong, and change nothing else. Then send the answers
-back, to the same helper or to a new one together with the list. The helper marks each
-finding resolved or still open and raises nothing new; a fix that broke something else
-leaves its finding open. Three fix rounds at most, and the loop ends as soon as nothing is
-open. A problem that was there from the start and that nobody listed is reported at Gate 2
-as an observation, never added to the list. Whatever is still open after the third round
-comes to me at Gate 2 as open, with both positions stated. Where you ran the audit
-yourself, the same loop holds and you do each re-check in a fresh pass.
+The helper raises its findings once, and that list is then closed. Answer every finding: fix
+it, or say in one line why it is wrong, and change nothing else. A quote the helper could
+not find is corrected from my document, or the comment that rests on it is dropped. Never
+keep the comment and take the quotation marks away. Then send the answers back, to the same
+helper or to a new one together with the list. The helper marks each finding resolved or
+still open and raises nothing new; a fix that broke something else leaves its finding open.
+Three fix rounds at most, and the loop ends as soon as nothing is open. A problem that was
+there from the start and that nobody listed is reported at Gate 2 as an observation, never
+added to the list. Whatever is still open after the third round comes to me at Gate 2 as
+open, with both positions stated. Where you ran the audit yourself, the same loop holds and
+you do each re-check in a fresh pass.
 
 ## Gate 2
 
@@ -201,6 +206,8 @@ CHECKPOINT: wait. Nothing is settled until I answer.
 - Never give a verdict on quality or a grade. A marker's job is not yours.
 - Never invent a source the document should have cited. If a claim needs support, say
   that it needs support.
+- Never say what a source I cite says or found unless my document quotes it or you have
+  opened that source. Where you could not check, say so in the comment.
 - Never fault the document for not being the document you would have written. Review
   the argument it makes, not the one you would have made.
 - Never raise a comment you cannot anchor to a quoted sentence.

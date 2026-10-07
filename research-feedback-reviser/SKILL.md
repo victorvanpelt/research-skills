@@ -75,8 +75,9 @@ section, this claim, this table), never a restatement of the comment.
 
 **Flag the collisions and the order.** Any two items that conflict, and any item that would
 undo a decision recorded elsewhere in my document. Where one item cannot be settled until
-another is (a rewritten hypothesis before the results that test it, new data before the table
-that reports it), say so and put the blocking item first.
+another is (a rewritten hypothesis before the results that test it, new data before the
+table that reports it), say so and put the blocking item first. Where two or more items ask
+for the same change, say so, draft it once, and name each of them in the response record.
 
 **Show me the numbered list and carry it straight into the drafts.** Do not wait. I approved
 what this job is at Gate 0, so the list is a record of the work you are about to do, not a
@@ -105,8 +106,10 @@ Three limits on what you write, and they matter more than the drafting itself.
   else's paragraph in my thesis.
 - **Say what you added.** Under each draft, list anything in it that was not in my document
   and not in the comment: a claim, a citation, a hedge that got stronger or weaker, a
-  connective that asserts a relationship, a number. If the list is empty, say so. If it is
-  not, I read the draft again.
+  connective that asserts a relationship, a number. List also what it took out that limited
+  a claim: a hedge, a condition such as "in this sample", or a result that found nothing or
+  went against me. A shorter sentence is where these get lost. If both lists are empty, say
+  so. If one is not, I read the draft again.
 - **Never hand me a block to paste.** Each draft is its own numbered proposal that I keep,
   reword, or reject on its own.
 
@@ -160,11 +163,11 @@ a draft adds a citation, the helper must be able to search the web. Give it only
 feedback, my document, the numbered items, the drafts, the response record, and the Gate 0
 read-back as I approved or corrected it, and ask it to report and fix nothing: does every
 item have a draft, a task, a question, or a stated block; does every draft name where it
-goes; did any draft go wider than its item; is everything a draft added listed under it;
-does every citation a draft adds exist; does the response record match the drafts; and do
-the drafts and the record cover what the read-back asked for. If your tool cannot start a
-helper that can do this, run the same check yourself in a deliberately fresh pass and say
-so at the hand-off.
+goes; did any draft go wider than its item; is everything a draft added, and everything it
+took out that limited a claim, listed under it; does every citation a draft adds exist; does
+the response record match the drafts; and do the drafts and the record cover what the
+read-back asked for. If your tool cannot start a helper that can do this, run the same check
+yourself in a deliberately fresh pass and say so at the hand-off.
 
 The helper raises its findings once, and that list is then closed. Answer every finding:
 fix it, or say in one line why it is wrong, and change nothing else. Then send the answers
@@ -184,13 +187,14 @@ Lead with the drafts and the response record, then a few lines, then the questio
   write files, and say where it is; where it cannot, show them in full. Each draft is marked
   as a draft and not as a decision, with the place in my document it belongs, and with its
   one-line alternative underneath where one exists.
-- **VERIFY, in a few lines**; I ask for the detail if I want it: how many items you found and
-  how they split across the four kinds; what the review found and who ran it; what the audit
-  found, who ran it, and how many fix rounds it took; what changed in response, and each
-  review point you did not act on, with your one-line reason; and what is still open: the
-  items you did not draft and what each is waiting on, the questions for my supervisor, the
-  collisions you flagged, and any item where you were unsure which way was smallest. An
-  empty list is said out loud, not left implied.
+- **VERIFY, in a few lines**; I ask for the detail if I want it: how many items you found
+  and how they split across the four kinds; how many words my document grows or shrinks by
+  if I accept every draft; what the review found and who ran it; what the audit found, who
+  ran it, and how many fix rounds it took; what changed in response, and each review point
+  you did not act on, with your one-line reason; and what is still open: the items you did
+  not draft and what each is waiting on, the questions for my supervisor, the collisions you
+  flagged, and any item where you were unsure which way was smallest. An empty list is said
+  out loud, not left implied.
 
 Log the AI use: tool, date, purpose.
 

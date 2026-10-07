@@ -69,12 +69,15 @@ else.
 ## The search
 
 Run at least three separate searches with different wording for the same idea. Where I gave
-you a journal ranking or approved one, run one of them restricted to those journals, so a search that would otherwise return whatever is easiest to find has to return
-the best work too. Where I declined to settle a ranking, run that search without the
-restriction and say at the hand-off that it went unrestricted. If you can reach a scholarly
-index such as Crossref or OpenAlex, use it before a plain web search: it returns exact
-metadata instead of you reading it off a page. Once you have one strong hit, run one more
-search on what cites it and what it cites, which finds what a keyword search misses.
+you a journal ranking or approved one, run one of them restricted to those journals, so a
+search that would otherwise return whatever is easiest to find has to return the best work
+too. One query holds only a few journal names: split a long list into groups of about six
+and run the restricted search once per group, or use an index that can filter by journal.
+Where I declined to settle a ranking, run that search without the restriction and say at the
+hand-off that it went unrestricted. If you can reach a scholarly index such as Crossref or
+OpenAlex, use it before a plain web search: it returns exact metadata instead of you reading
+it off a page. Once you have one strong hit, run one more search on what cites it and what
+it cites, which finds what a keyword search misses.
 
 **Then check yourself for the obvious miss.** This is your own review of the search. Name
 two or three things a literature on this topic almost certainly contains: a founding study
@@ -87,6 +90,11 @@ what you probed for and what came back.
 
 For each hit, record: exact title, all authors, venue, year, DOI if visible, and the link to
 the result you read it in. A candidate without that link is not a candidate.
+
+A working paper and its published version are the same study in two records. Where both turn
+up, keep the two records apart, as rule 3 says, list the published one, and name the working
+paper in one line under it. Mark a paper that is still a working paper or a preprint as not
+yet peer reviewed.
 
 ## Audit
 

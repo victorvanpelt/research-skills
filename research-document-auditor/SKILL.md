@@ -100,15 +100,16 @@ to a different paper is a worse error than a missing one, and a work whose DOI t
 document leaves out is a correction.
 
 Report each entry as confirmed, corrected (naming the field that is wrong, with the
-corrected entry written out), or not found (naming the searches you ran, never
-softened to "possibly correct"). Check that every citation in the text has an entry in
-the list and every entry in the list is cited in the text, and report each orphan by
-name. Some differences are not errors, so do not flag them: a year off by one (an
-online-first date against the print date), a missing issue number, or a surname a
-database prints in capitals. Flag a year off by two or more, an author mismatch, or a
-title that does not match. Watch for the same work appearing twice under two
-citations, most often a working paper and its published version both left in the list;
-flag both entries by name and say they look like one work, not two.
+corrected entry written out), or not found (naming the searches you ran, never softened to
+"possibly correct"). Take all of a corrected entry's details from a single record, and never
+merge two results that look like the same paper. Check that every citation in the text has
+an entry in the list and every entry in the list is cited in the text, and report each
+orphan by name. Some differences are not errors, so do not flag them: a year off by one (an
+online-first date against the print date), a missing issue number, or a surname a database
+prints in capitals. Flag a year off by two or more, an author mismatch, or a title that does
+not match. Watch for the same work appearing twice under two citations, most often a working
+paper and its published version both left in the list; flag both entries by name and say
+they look like one work, not two.
 
 **Check 2: claims and facts.** Two passes over the same text.
 
@@ -130,6 +131,10 @@ of each. A number in the text that appears nowhere else is its own finding: say 
 it came from, or say that you cannot tell. Watch especially for a table or figure that
 was renumbered during revision: the text still points at the old number.
 
+Text pulled out of a PDF can shift the columns of a table. Where you can look at the page
+itself, check a table there before you report a mismatch in it. Where you cannot, say in the
+finding that the table was read from extracted text.
+
 Where the document reports statistics, also run these; where it reports none, say so
 and move on:
 
@@ -145,12 +150,25 @@ and move on:
   percentages that does not sum, an R-squared above one;
 - rounding and decimal places used inconsistently for the same quantity.
 
-Recompute only from numbers the document itself prints. Where a check needs data you
-do not have, say what you would need and report that check as not run.
+Recompute only from numbers the document itself prints. Show the arithmetic in the finding,
+so I can redo it. A recomputation you cannot show is reported as not run, never as a
+mismatch. Where I gave you my data output, compare every number in the tables and the text
+against it and quote both. A disagreement is Major even where the document agrees with
+itself. Where a check needs data you do not have, say what you would need and report that
+check as not run.
 
 **Check 4: consistency.** Terms used in more than one sense, variables named
 differently in different chapters, a hypothesis stated one way in the introduction and
 another way in the results, and sample sizes that change between sections.
+
+Also under this check: text that was never finished. A placeholder such as [TODO], [CITE],
+XXX, or ???, a note to myself left in the text, an empty section, or a paragraph pasted in
+twice. Each one is Major.
+
+And every pointer inside the document: each table, figure, section, appendix, equation, and
+hypothesis the text refers to exists under that number, each one that exists is referred to
+at least once, the numbering has no gap and no repeat, and a paragraph that announces the
+structure ("Chapter 4 presents the results") matches the chapters as they are.
 
 **Check 5: overclaiming.** Sentences that state more than the design supports. Causal
 verbs where the design is correlational. A finding described as established when the
@@ -218,16 +236,18 @@ the definitions above are a guide to it, not a verdict on it.
 
 ## The report
 
-Open with one line per check: the count of findings, by severity. Then findings only,
-check by check, ordered by severity within each check. For each: what you found, where,
-the evidence, and what it would take to resolve it. Write the fix out in full where the
-fix is mechanical: the corrected reference entry, the DOI link, the number that should be
-there, the correct APA form. Write each one beside the finding it belongs to, and never
-gather them into a corrected list, a corrected section, or a corrected file. One fix next
-to its finding is something I have to read before I use it. The same fixes collected into
-a block is something I will paste, and then a change I never read is in a document I sign.
-Do not write replacement wording for anything in checks 2, 4, or 5, because changing what
-a sentence claims is my decision, not yours. Either way, change nothing in the document.
+Open with one line per check: the count of findings, by severity. Count these lines last,
+after the second reader's loop and your severity call, so they match what stands below them.
+Then findings only, check by check, ordered by severity within each check. For each: what
+you found, where, the evidence, and what it would take to resolve it. Write the fix out in
+full where the fix is mechanical: the corrected reference entry, the DOI link, the number
+that should be there, the correct APA form. Write each one beside the finding it belongs to,
+and never gather them into a corrected list, a corrected section, or a corrected file. One
+fix next to its finding is something I have to read before I use it. The same fixes
+collected into a block is something I will paste, and then a change I never read is in a
+document I sign. Do not write replacement wording for anything in checks 2, 4, or 5, because
+changing what a sentence claims is my decision, not yours. Either way, change nothing in the
+document.
 
 Then one line, headed "seen but not checked here", for the two things this audit keeps
 out of scope: language errors, and prose that reads as machine-written. Say whether you

@@ -84,8 +84,12 @@ language edit goes wrong, and it is the one thing I will not catch by reading th
 ## How to mark the changes, by file type
 
 Never overwrite my original. Write a new file next to it: `thesis.docx` becomes
-`thesis_edited.docx`, `paper.tex` becomes `paper_edited.tex`. Number every change, and use the
-same numbers in the list you hand me, so I can point at one and say no.
+`thesis_edited.docx`, `paper.tex` becomes `paper_edited.tex`. If that name is already taken,
+add a number to it. Never overwrite an edited file either. Number every change, and use the
+same numbers in the list you hand me, so I can point at one and say no. Never put one change
+inside another: I must be able to reject each one alone. A number stays with its change: a
+change you withdraw keeps its number in the list, marked withdrawn, and no other change
+takes it.
 
 **Word (.docx).** Real Word tracked changes, so I open the file and use Review, then Accept or
 Reject, one change at a time. Each change is a deletion of the old text plus an insertion of the
@@ -160,10 +164,10 @@ If it would not, something is missing from a marker, and you fix that before I s
    did not edit it. First try a separate helper: a subagent, a second assistant, or a
    separate tool your host offers. Give it only my original, the marked text, and the
    do-not-touch list from step 2, and ask it one question, answered by change number and
-   fixed by nobody: did the meaning, the content, or a term on that list change anywhere?
-   For a long document, split it by chapter across helpers. If your tool cannot start a
-   helper, ask yourself that question in a deliberately fresh pass, reading the changes as
-   if you had not made them, and say so in the hand-back.
+   fixed by nobody: did the meaning, the content, how certain a claim sounds, or a term on
+   that list change anywhere? For a long document, split it by chapter across helpers. If
+   your tool cannot start a helper, ask yourself that question in a deliberately fresh pass,
+   reading the changes as if you had not made them, and say so in the hand-back.
 
    The helper names its change numbers once, and that list is then closed. For each number
    on it, withdraw the change, narrow it until my meaning is back, or keep it and say why

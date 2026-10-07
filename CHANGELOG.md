@@ -40,12 +40,32 @@ order: plan, work, review, audit. A skill with no first stop or no review step s
 - **research-text-humanizer**: a small audit confirms that every flag quotes your passage
   word for word and names a sign from the list.
 - **research-paper-finder**: a paper found by a follow-up search goes through the same
-  check before it enters the list.
+  check before it enters the list. A working paper and its published version are listed
+  once, and a working paper is marked as not yet peer reviewed. A long journal list is
+  searched in groups of about six names.
 - **research-english-editor**: the helper gets the do-not-touch list, and a change it names
-  is withdrawn, narrowed, or kept with a stated reason before you see the file.
+  is withdrawn, narrowed, or kept with a stated reason before you see the file. The helper's
+  question now names how certain a claim sounds. No change sits inside another, a withdrawn
+  change keeps its number, and an edited file from an earlier run is never overwritten.
 - **research-feedback-reviser**: shows the numbered list of requests before it drafts.
+  Under each draft it also lists what the draft took out that limited a claim. Comments
+  that ask for the same change get one draft. The hand-over says how many words your
+  document grows or shrinks by if you accept every draft.
 - **research-document-auditor**: the second reader also checks that everything you asked
-  for and every promised check ran or is reported as not run.
+  for and every promised check ran or is reported as not run. The checks now also cover
+  leftover placeholders and paragraphs pasted in twice, every pointer to a table, figure,
+  section, appendix, equation, or hypothesis, and the numbers against your data output where
+  you supply it. A recomputed value shows its arithmetic, a table read from PDF text is
+  checked on the page before a mismatch is reported, and a corrected reference comes from
+  one record.
+- **research-proposal-drafter**: a template, a length limit, or something you ruled out now
+  binds the draft, and the audit checks it. Two more audit checks: the proposal states no
+  result you cannot have yet, and it agrees with itself (the summary, a number stated twice,
+  every hypothesis label).
+- **research-document-reviewer**: the step a comment asks for is one you can take with what
+  you have. A comment never says what a source you cite found unless that source was opened.
+  The defender drops a comment only where it can name the sentence in your document that
+  answers it, and a quote the audit could not find is corrected or its comment is dropped.
 
 ## 1.2.0, 2026-09-17
 

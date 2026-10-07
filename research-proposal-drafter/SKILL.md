@@ -183,7 +183,9 @@ Write the proposal, 700 to 1,000 words, in these sections: title and one-paragra
 what the study tries to find out; why an answer matters, and to whom; how the answer will be
 found (design, sample, data, measures, what the analysis compares), in the tense and shape
 Phase 1 settled; what the study expects to find; references. Where an argument needs a step
-my answers did not give, put `[I NEED TO DECIDE: ...]` rather than inventing it.
+my answers did not give, put `[I NEED TO DECIDE: ...]` rather than inventing it. Where I
+gave you a required template or a length limit at intake, they replace the sections and the
+word range named here.
 
 Write the predictions the plan outlined: two or three well-motivated ones rather than a long
 list of thin ones. State each so a result could contradict it, tie each to something the
@@ -237,20 +239,21 @@ carry the rest of that list to me as mine. The review is one round, never a loop
 
 ## Phase 6: Audit
 
-A helper can check whether something is so, and that is all this phase asks of it. First
-try a separate helper: a subagent, a second assistant, or a separate audit tool your host
+A helper can check whether something is so, and that is all this phase asks of it. First try
+a separate helper: a subagent, a second assistant, or a separate audit tool your host
 offers. It must be able to search the web. Give it only four things: the revised draft with
 its reference list, the plan from Phase 2, the Gate 0 read-back as I approved or corrected
-it, and the five numbered checks below, never this conversation or your reasoning. If your
+it, and the seven numbered checks below, never this conversation or your reasoning. If your
 tool cannot start a helper that can do this, run these checks yourself in a deliberately
 fresh pass, re-reading the draft from the top as a reader who did not write it, and say so
 at the hand-off.
 
-The five checks report and repair nothing:
+The seven checks report and repair nothing:
 
 1. **The proposal delivers what I asked for and what the plan promised.** Everything the
    read-back and the plan named is in the proposal, and anything in the proposal that
-   neither called for is flagged.
+   neither called for is flagged. Where I gave a template, a length limit, or something I
+   ruled out, the proposal keeps to each one.
 2. **References resolve.** Does every entry resolve to a real work? Search for the exact
    title plus the first author's surname and compare title, authors, venue, and year against
    the record retrieved, never against what the draft says.
@@ -262,6 +265,12 @@ The five checks report and repair nothing:
 5. **Facts and numbers.** Every checkable number, name, date, institution, and definition,
    each with the source it was checked against quoted, and every number in the prose traced
    back to something I supplied. Anything it could not check is said, never passed.
+6. **The shape held.** Where Phase 1 said I have no data yet, no sentence states a result of
+   my own study as found. Where the data is in hand, the finding is labeled preliminary and
+   says what the design cannot claim. Quote every sentence that fails.
+7. **The proposal agrees with itself.** The summary claims nothing the sections below it do
+   not. A number that appears more than once, such as the sample size, is the same each
+   time. Every hypothesis label used anywhere is one the proposal defines.
 
 Nothing else goes to the helper. It proposes no wording outside check 3, gives no verdict on
 how the draft reads, and rewrites nothing.
@@ -289,8 +298,8 @@ comments, then the four things, then the question.
   text you propose, labeled as your proposal, not as a change you made. This is the part I
   will act on first, so keep it short and specific.
 - **VERIFY, the four things**, in a few lines; I ask for the detail if I want it:
-  - *What it is*: the word count without the reference list, against the 700 to 1,000 target,
-    and which shape from Phase 1 it was written in.
+  - *What it is*: the word count without the reference list, against the 700 to 1,000 target
+    or the limit I gave, and which shape from Phase 1 it was written in.
   - *What the review and the audit found*: the review points that mattered and who ran the
     review; the audit counts per check, the findings that mattered, who ran the audit, and
     how many fix rounds it took.
