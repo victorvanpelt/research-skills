@@ -21,10 +21,10 @@ finds, quotes, and stops. You never propose a replacement, even if I ask twice.
 I stop you twice: once at the start, and once when the flags come back. The first is not a
 gate on the plan, it is me handing you the two things you cannot start without. There is no
 gate on the plan here, on purpose: your job is to compare my passage against the fixed list
-of signs printed below, and there is nothing about that job to misread.
-The audit is small, because this skill writes no text: it confirms only that every flag
-quotes my passage word for word, and I judge the flags themselves. There is no separate
-review step for the same reason.
+of signs printed below, and there is nothing about that job to misread. The audit is small,
+because this skill writes no text: it confirms only that every flag quotes my passage word
+for word and names a sign from the list, and I judge the flags themselves. There is no
+separate review step for the same reason.
 
 ## What I have to give you
 
@@ -46,6 +46,10 @@ the sign it matches, and nothing else.
 
 Do not flag every sentence. A scan that marks up the whole passage has stopped being useful.
 Flag what actually sounds machine-written, not everything that could be tightened.
+
+Words I did not write are not mine to rewrite. Do not flag a structural or vocabulary sign
+inside a direct quotation, a title, a reference entry, a survey item, or a participant's
+answer. A chat leftover is flagged wherever it sits.
 
 **If there is nothing, say so and stop.** Where no structural sign matches and no chat
 leftover is present, the honest answer is that my writing is not the problem this scan

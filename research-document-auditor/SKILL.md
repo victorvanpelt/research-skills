@@ -101,15 +101,19 @@ document leaves out is a correction.
 
 Report each entry as confirmed, corrected (naming the field that is wrong, with the
 corrected entry written out), or not found (naming the searches you ran, never softened to
-"possibly correct"). Take all of a corrected entry's details from a single record, and never
-merge two results that look like the same paper. Check that every citation in the text has
-an entry in the list and every entry in the list is cited in the text, and report each
-orphan by name. Some differences are not errors, so do not flag them: a year off by one (an
-online-first date against the print date), a missing issue number, or a surname a database
-prints in capitals. Flag a year off by two or more, an author mismatch, or a title that does
-not match. Watch for the same work appearing twice under two citations, most often a working
-paper and its published version both left in the list; flag both entries by name and say
-they look like one work, not two.
+"possibly correct"). For a book, a chapter, a report, a thesis, or a working paper, also
+search the publisher's or the issuing body's page and a library catalogue before you report
+it. Where that still returns nothing, it stays not found, and you say in the same line that
+indexes often leave out this kind of work and that I should check it against my own copy.
+Take all of a corrected entry's details from a single record, and never merge two results
+that look like the same paper. Check that every citation in the text has an entry in the
+list and every entry in the list is cited in the text, and report each orphan by name. Some
+differences are not errors, so do not flag them: a year off by one (an online-first date
+against the print date), a missing issue number, or a surname a database prints in capitals.
+Flag a year off by two or more, an author mismatch, or a title that does not match. Watch
+for the same work appearing twice under two citations, most often a working paper and its
+published version both left in the list; flag both entries by name and say they look like
+one work, not two.
 
 **Check 2: claims and facts.** Two passes over the same text.
 
@@ -264,17 +268,18 @@ the "worth checking yourself, not confirmed" list from the second reader.
 Lead with the report, then a few lines, then the question.
 
 - **The report**: save it as a Markdown file next to my document where your tool can write
-  files, and say where it is; where it cannot, show it in full. Above it, the counts by
-  severity and the five findings that matter most, one line each.
+  files, and say where it is. Never overwrite a file from an earlier run. If the name is
+  taken, add a number to it. Where your tool cannot write files, show it in full. Above it,
+  the counts by severity and the five findings that matter most, one line each.
 - **VERIFY, in a few lines**; I ask for the detail if I want it: how many references you
   checked and how many were confirmed, corrected, or not found, listing every not-found
-  entry by name; how many claims stand unsupported and how many facts you checked; how
-  many numbers checked and how many matched; how many statistical checks run and how many
-  failed; how many consistency problems, overclaims, and format rules met; which checks
-  you could not run and why; what your own review merged or added; what the second reader
-  raised, who ran it, and how many fix rounds it took; and the count in the not-confirmed
-  list. Never report a clean result you did not actually establish.
-  Log the AI use: tool, date, purpose.
+  entry by name, journal articles first and the other kinds of work after them; how many
+  claims stand unsupported and how many facts you checked; how many numbers checked and how
+  many matched; how many statistical checks run and how many failed; how many consistency
+  problems, overclaims, and format rules met; which checks you could not run and why; what
+  your own review merged or added; what the second reader raised, who ran it, and how many
+  fix rounds it took; and the count in the not-confirmed list. Never report a clean result
+  you did not actually establish. Log the AI use: tool, date, purpose.
 
 Then the question: which findings do I accept, which do I reject with a reason, and does
 any check need a deeper pass?

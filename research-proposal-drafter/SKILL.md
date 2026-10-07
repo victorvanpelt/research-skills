@@ -292,8 +292,9 @@ comments, then the four things, then the question.
 
 - **The proposal**: one Markdown (.md) document, title, the sections from Phase 4, and
   References last in APA 7 with DOI links. Save it where your tool can write files, and say
-  where it is, alongside the Phase 2 plan; where it cannot, show the proposal in full in one
-  block.
+  where it is, alongside the Phase 2 plan. Never overwrite a file from an earlier run. If
+  the name is taken, add a number to it. Where your tool cannot write files, show the
+  proposal in full in one block.
 - **The three changes that would most improve this proposal**, ranked, each with the concrete
   text you propose, labeled as your proposal, not as a change you made. This is the part I
   will act on first, so keep it short and specific.

@@ -38,7 +38,9 @@ order: plan, work, review, audit. A skill with no first stop or no review step s
   short text: search the web, or hold your whole document at once, with a split by chapter
   where it cannot.
 - **research-text-humanizer**: a small audit confirms that every flag quotes your passage
-  word for word and names a sign from the list.
+  word for word and names a sign from the list. A style sign inside a quotation, a title, a
+  reference entry, or a survey item is not flagged; a chat leftover is flagged wherever it
+  sits.
 - **research-paper-finder**: a paper found by a follow-up search goes through the same
   check before it enters the list. A working paper and its published version are listed
   once, and a working paper is marked as not yet peer reviewed. A long journal list is
@@ -57,7 +59,9 @@ order: plan, work, review, audit. A skill with no first stop or no review step s
   section, appendix, equation, or hypothesis, and the numbers against your data output where
   you supply it. A recomputed value shows its arithmetic, a table read from PDF text is
   checked on the page before a mismatch is reported, and a corrected reference comes from
-  one record.
+  one record. For a book, a report, a thesis, or a working paper it also searches the
+  publisher's page and a library catalogue; one that is still not found stays not found,
+  with a note that indexes often leave out such work.
 - **research-proposal-drafter**: a template, a length limit, or something you ruled out now
   binds the draft, and the audit checks it. Two more audit checks: the proposal states no
   result you cannot have yet, and it agrees with itself (the summary, a number stated twice,
@@ -66,6 +70,10 @@ order: plan, work, review, audit. A skill with no first stop or no review step s
   you have. A comment never says what a source you cite found unless that source was opened.
   The defender drops a comment only where it can name the sentence in your document that
   answers it, and a quote the audit could not find is corrected or its comment is dropped.
+  A second look at a revised document gives each earlier comment one verdict and writes no
+  new set of main comments.
+- **Four skills that save a file** (document auditor, document reviewer, feedback reviser,
+  proposal drafter) never overwrite a file from an earlier run.
 
 ## 1.2.0, 2026-09-17
 

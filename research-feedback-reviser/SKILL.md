@@ -184,9 +184,10 @@ yourself, the same loop holds and you do each re-check in a fresh pass.
 Lead with the drafts and the response record, then a few lines, then the question.
 
 - **The drafts and the response record**: save them as one Markdown file where your tool can
-  write files, and say where it is; where it cannot, show them in full. Each draft is marked
-  as a draft and not as a decision, with the place in my document it belongs, and with its
-  one-line alternative underneath where one exists.
+  write files, and say where it is. Never overwrite a file from an earlier run. If the name
+  is taken, add a number to it. Where your tool cannot write files, show them in full. Each
+  draft is marked as a draft and not as a decision, with the place in my document it
+  belongs, and with its one-line alternative underneath where one exists.
 - **VERIFY, in a few lines**; I ask for the detail if I want it: how many items you found
   and how they split across the four kinds; how many words my document grows or shrinks by
   if I accept every draft; what the review found and who ran it; what the audit found, who

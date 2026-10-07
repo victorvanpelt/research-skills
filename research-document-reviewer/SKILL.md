@@ -182,9 +182,10 @@ you do each re-check in a fresh pass.
 
 Lead with the review, then a few lines, then the question.
 
-- **The review**: save it as a Markdown file where your tool can write files, and say
-  where it is; where it cannot, show it in full. Above it, the three main comments in
-  one sentence each, the number of minor comments, and the count that fell to the cap.
+- **The review**: save it as a Markdown file where your tool can write files, and say where
+  it is. Never overwrite a file from an earlier run. If the name is taken, add a number to
+  it. Where your tool cannot write files, show it in full. Above it, the three main comments
+  in one sentence each, the number of minor comments, and the count that fell to the cap.
 - **VERIFY, in a few lines**; I ask for the detail if I want it: what the audit found,
   who ran it, and how many fix rounds it took; who ran the defender pass, what it killed
   or narrowed, with the count, any verdict you did not follow and why, and any kill you
@@ -199,6 +200,12 @@ which do I want to answer? Do not say whether the document is good, and do not e
 a grade.
 
 CHECKPOINT: wait. Nothing is settled until I answer.
+
+**A second look judges the revision.** If I come back with the same document revised and
+your earlier review, give each earlier comment one verdict, met, partly met, or not met,
+with the sentence in the revision behind it. Raise a new comment only where a change I made
+caused the problem, and write no new set of main comments. A problem you missed the first
+time goes in one closing line as an observation.
 
 ## What you never do
 
