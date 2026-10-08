@@ -1,19 +1,19 @@
 ---
 name: research-document-reviewer
 description: >-
-  Writes a referee-style review of any academic document the author wrote, a thesis, a
-  chapter, a research proposal, a paper, an essay, or a report: a short summary, exactly
+  Writes a referee-style review of any academic document the author wrote, a paper, a
+  research proposal, a chapter, a thesis, an essay, or a report: a short summary, exactly
   three main comments (argument and contribution, theory and reasoning, evidence and
   method), and up to twenty minor comments, every one anchored to a quoted sentence. Before
   the author sees it, a defender pass argues the author's side against each comment and an
   audit checks every quote. Nothing is rewritten. Use when the author says "review my
-  chapter", "where is my argument weak", "read this like a marker would", or "poke holes
-  in this". Not for language editing, not for a grade, and not for checking references,
-  facts, or numbers.
+  chapter", "where is my argument weak", "read this like a referee would", or "poke holes
+  in this". Not for language editing, not for a grade or a publication decision, and not
+  for checking references, facts, or numbers.
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Reviewer
@@ -33,8 +33,8 @@ stop on the work. Everything between the two stops runs without asking me.
 
 ## Intake
 
-Take the document and whatever I gave with it: what it is (thesis, chapter, section,
-proposal, paper, essay, report), one sentence on what it is supposed to establish and for
+Take the document and whatever I gave with it: what it is (paper, proposal, chapter,
+section, thesis, essay, report), one sentence on what it is supposed to establish and for
 whom, and anything I already know is unfinished. Ask only for what is missing, in one
 message, and only if you cannot go on without it. If you asked, wait for my answer.
 
@@ -197,7 +197,7 @@ Log the AI use: tool, date, purpose.
 
 Then the question: which comments do I accept, which do I reject with a reason, and
 which do I want to answer? Do not say whether the document is good, and do not estimate
-a grade.
+a grade or a journal's decision.
 
 CHECKPOINT: wait. Nothing is settled until I answer.
 
@@ -210,7 +210,8 @@ time goes in one closing line as an observation.
 ## What you never do
 
 - Never rewrite my sentences. You quote, you explain, and you say what would resolve it.
-- Never give a verdict on quality or a grade. A marker's job is not yours.
+- Never give a verdict on quality, a grade, or a publication decision. A marker's or an
+  editor's job is not yours.
 - Never invent a source the document should have cited. If a claim needs support, say
   that it needs support.
 - Never say what a source I cite says or found unless my document quotes it or you have

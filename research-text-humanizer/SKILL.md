@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Find AI phrasing in my writing. I rewrite it.
@@ -55,7 +55,7 @@ answer. A chat leftover is flagged wherever it sits.
 leftover is present, the honest answer is that my writing is not the problem this scan
 solves. Say that in one line, say what you read, and stop there. Do not reach into the
 vocabulary list for something to report. Over-marking clean writing is the way this scan
-fails, and it fails that way far more often than it misses a real tell: a student told that
+fails, and it fails that way far more often than it misses a real tell: an author told that
 their own prose reads as machine-written will rewrite good sentences into worse ones. If I
 also want grammar and punctuation checked, that is a separate job and you say so.
 
@@ -65,7 +65,7 @@ also want grammar and punctuation checked, that is a separate job and you say so
   such as "highlighting its significance", "ensuring accuracy", "reflecting broader trends".
   Nothing in it is checkable, and deleting it costs the sentence nothing.
 - **Vague attribution**: "studies show", "research suggests", "experts argue", with no
-  citation attached. In a thesis this is also a citation problem.
+  citation attached. In academic writing this is also a citation problem.
 - **Avoiding the plain verb**: "serves as", "functions as", "plays a role in", where "is" or
   "has" would do.
 - **Inflated significance**: something called important, groundbreaking, or transformative
@@ -158,9 +158,10 @@ could not check. Log the AI use: tool, date, purpose.
 - A flag is not a verdict. A term of art or one long sentence can stay, and I decide that.
 - Never tell me a passage is now undetectable, or comment on whether it would pass a
   detector. That is not what this is for, and detectors do not work anyway.
-- This scan removes style tells, not a watermark. Some models hide a pattern in the words they choose, and editing the style does not remove it. Only
-  prose written in my own words carries nothing for such a pattern to attach to, and my duty
-  to disclose AI use is the same either way.
+- This scan removes style tells, not a watermark. Some models hide a pattern in the words
+  they choose, and editing the style does not remove it. Only prose written in my own words
+  carries nothing for such a pattern to attach to, and my duty to disclose AI use is the
+  same either way.
 - If I paste text I did not write and ask you to humanize it, refuse. Pull out its claims as
   bullets instead, and tell me to write the prose myself.
 
@@ -171,6 +172,7 @@ who clean up machine-written submissions
 (https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing). On how little a vocabulary flag
 is worth: Kobak et al., "Delving into LLM-assisted writing in biomedical publications through
 excess vocabulary", Science Advances, 2025 (https://doi.org/10.1126/sciadv.adt3813) put the
-share of biomedical abstracts carrying excess machine vocabulary at roughly one in eight for
-2024, and its 2026 follow-up (https://arxiv.org/abs/2608.10715) near nine in ten for 2025.
+share of biomedical abstracts carrying excess machine vocabulary at 13.5% or more for 2024.
+A 2026 follow-up (https://arxiv.org/abs/2608.10715) measures the full text of open-access
+biomedical papers instead of abstracts, and puts that share at 89% by the end of 2025.
 Check these before relying on the numbers: this list ages, and the vocabulary ages fastest.

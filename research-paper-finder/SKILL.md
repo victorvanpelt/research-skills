@@ -11,11 +11,12 @@ description: >-
   already in a document.
 license: CC-BY-4.0
 compatibility: >-
-  Needs web search or page-fetch access to find and confirm papers. Without it, the skill
-  says so and stops rather than returning unverified results.
+  Needs one way to search: a paper-search tool the host already has, an open scholarly index,
+  or web search with page fetch. Needs no account, key, or login of its own. Where nothing
+  can search, the skill says so and stops rather than returning unverified results.
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Paper finder
@@ -40,44 +41,51 @@ supply for me.
    memory and never build one from a pattern.
 5. Never pad. If I asked for fifteen papers and you confirmed nine, deliver nine and say so.
 
+## What you search with
+
+Before anything else, look at which tools your host already gives you for finding academic
+work. Prefer them in this order, and use more than one where that helps:
+
+1. A paper-search tool or connector that is already set up: a scholarly search service, a
+   library or database connection, a reference manager.
+2. An open scholarly index you can query directly, such as Crossref or OpenAlex. It needs
+   no account, and it returns exact metadata instead of you reading it off a page.
+3. Plain web search and page fetch.
+
+Work with what is already connected. Never ask me for a login, a key, or a password, and
+never make me install or sign up for something before you start. Where nothing you have
+can search, say so and stop.
+
 ## What I have to give you before you search
 
 Ask me for the topic as a question rather than a keyword, plus anything that narrows it: the
 field, the years, and how many papers I want. Take it all in one message, and where I
 already gave you any of it, ask only for what is missing.
 
-In the same message, read the topic back in one sentence, say which words you will search
-on, and ask me for the list of journals you should treat as the strongest in this field.
+In the same message, read the topic back in one sentence, and say which words you will
+search on, which of the tools above you will search with, and which journals you will treat
+as the strongest.
 
-**Ask me for my supervisor's or my department's list first.** That is the ranking that
-actually governs my thesis, and it is the one I can get in an email. Any ranking I did not
-give you is yours, not mine, however sure of it you are, and a ranking I have not seen is
-one I cannot correct. Knowing the field is not a reason to skip the ask.
-
-If I have no list and cannot get one, do not drop the question and do not proceed without
-one. Offer me the Financial Times 50 as a starting point. Say what it is in one line: a
-public list of fifty journals the Financial Times uses to rank business schools, which
-covers accounting, finance, management, marketing, economics, and operations, and which is
-one list among several rather than the answer. Say that it is your proposal, not mine, and
-ask me to approve it, change it, or decline. If I approve it, it is mine from then on and
-you may group by it. If I decline to settle it, say so and search without a journal
-restriction, and say at the hand-off that the strongest-journals search did not run.
+**The strongest journals are those on the Financial Times 50 and those rated 4* or 4 on the
+ABS list**, the Academic Journal Guide of the Chartered Association of Business Schools.
+Use the ones that publish in my topic's field. Do not ask me for a journal list. Where I
+gave you a list of my own without being asked, use mine instead. Where the two lists hold
+no journal in my topic's field, say so, search without a journal restriction, and say at
+the hand-off that the strongest-journals search did not run.
 
 Wait for my answer to this one message. Then run to the end without asking me anything
 else.
 
 ## The search
 
-Run at least three separate searches with different wording for the same idea. Where I gave
-you a journal ranking or approved one, run one of them restricted to those journals, so a
-search that would otherwise return whatever is easiest to find has to return the best work
-too. One query holds only a few journal names: split a long list into groups of about six
-and run the restricted search once per group, or use an index that can filter by journal.
-Where I declined to settle a ranking, run that search without the restriction and say at the
-hand-off that it went unrestricted. If you can reach a scholarly index such as Crossref or
-OpenAlex, use it before a plain web search: it returns exact metadata instead of you reading
-it off a page. Once you have one strong hit, run one more search on what cites it and what
-it cites, which finds what a keyword search misses.
+Run at least three separate searches with different wording for the same idea. Run one of
+them restricted to the strongest journals, so a search that would otherwise return whatever
+is easiest to find has to return the best work too. One query holds only a few journal
+names: split a long list into groups of about six and run the restricted search once per
+group, or use an index that can filter by journal. Where there are no strongest journals in
+my topic's field, run that search without the restriction and say at the hand-off that it
+went unrestricted. Once you have one strong hit, run one more search on
+what cites it and what it cites, which finds what a keyword search misses.
 
 **Then check yourself for the obvious miss.** This is your own review of the search. Name
 two or three things a literature on this topic almost certainly contains: a founding study
@@ -127,17 +135,18 @@ Lead with the list, then a few lines on how it was made, then the question.
 
 - **The list**: for each paper, title, authors, venue, year, DOI or link, and one line on
   what it is about, taken from its abstract and not from your own knowledge. Group by venue
-  strength where I gave you a ranking or approved one, and say which group each paper is
-  in. Where I settled no ranking, do not group at all. Grouping by venue is not
+  strength, and say which group each paper is in. Where the strongest-journals search did
+  not run, do not group at all. Grouping by venue is not
   ranking by importance: it says where a paper was published, which I can check, not
   whether it matters, which I decide. Mark each paper the audit corrected, naming the field
   that changed. Under the list, the papers the audit did not find, with what the candidate
   list said and what the fresh search returned for each.
 - **VERIFY, how it was made**, in a few lines; I ask for the detail if I want it: how many
   candidates you found, how many you dropped and why, how many searches you ran and on
-  which wordings, what you probed for in the obvious-miss check and what came back, whether
-  a scholarly index was reachable, who ran the audit, what the auditor's coverage note
-  said, what your follow-up searches returned, what the audit said about the papers those
+  which wordings, which tools you searched with and whether a scholarly index was
+  reachable, what you probed for in the obvious-miss check and what came back, who ran the
+  audit, what the auditor's coverage note said, what your follow-up searches returned, what
+  the audit said about the papers those
   searches added, and what the search still did not cover: any
   angle of the topic you did not search, and the gap between what I asked for and what you
   confirmed.

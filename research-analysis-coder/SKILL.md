@@ -2,7 +2,7 @@
 name: research-analysis-coder
 description: >-
   Writes the code that computes a result from the author's data, and never the result
-  itself, so every number in the thesis comes from a script that can be run again. Use
+  itself, so every number in the author's work comes from a script that can be run again. Use
   when the author says "help me analyze this data", "run this regression", "calculate the
   descriptives", or "what is the average", or asks for any number from a dataset. Writes
   R, Python, Stata, or SPSS code. Not for interpreting what a result means, and not for
@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Every number comes from code I can rerun
@@ -19,7 +19,7 @@ You may write the code that does the work. You may never do the work.
 
 A number produced inside a conversation cannot be checked, cannot be reproduced, and
 disappears when the chat does. A saved script can be run by anyone, including me in six
-months when an examiner asks how I handled missing values.
+months when a referee or an examiner asks how I handled missing values.
 
 I stop you twice: once when you say back what you think I asked, and once when you hand
 the script over. Everything in between you do on your own.
@@ -33,7 +33,7 @@ one answer.
    extracts, and anything identifying a person do not go into a public chat. Where what I
    have already told you names one of those, or the file name or the file itself shows one,
    do not ask me the question: say which one you saw, stop there, and tell me to use a tool
-   my school has approved for that kind of data. Ask me only where you cannot tell. The
+   my institution has approved for that kind of data. Ask me only where you cannot tell. The
    point of this check is that it does not depend on my answer, because I am the person
    with a reason to say it is fine.
 2. What do I want computed, in one sentence, and what do the columns mean?
@@ -74,11 +74,11 @@ prints it. No step may depend on anything typed into this conversation.
 ## Review
 
 This skill writes no plan between Gate 0 and the script, so the review is yours, and it is
-short. Read the script once from the top as the person who will have to defend it to an
-examiner. Two things. Every choice that changes a number (how missing values are handled,
-which cases are excluded, which specification) is either one I made at Gate 0 or is on the
-open list for Gate 2, never filled in quietly. And every step does what its comment says.
-Fix what you find before the audit.
+short. Read the script once from the top as the person who will have to defend it to a
+referee or an examiner. Two things. Every choice that changes a number (how missing values
+are handled, which cases are excluded, which specification) is either one I made at Gate 0
+or is on the open list for Gate 2, never filled in quietly. And every step does what its
+comment says. Fix what you find before the audit.
 
 ## Audit
 

@@ -32,7 +32,7 @@ this; it is the publisher's record, more reliable than a page a web search
 happens to find.
 
 When the evidence on a candidate is ambiguous, drop rather than keep. A missed
-real paper costs one more search; a fabricated paper that reaches the student
+real paper costs one more search; a fabricated paper that reaches the author
 costs the whole list its credibility.
 
 Report the three groups by name. For every paper in the corrected or

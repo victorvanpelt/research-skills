@@ -1,8 +1,8 @@
 ---
 name: research-english-editor
 description: >-
-  Copy-edits any academic document the author wrote, a thesis, a chapter, a proposal, a
-  paper, an essay, or a pasted passage, for grammar, spelling, punctuation, and US
+  Copy-edits any academic document the author wrote, a paper, a proposal, a chapter, a
+  thesis, an essay, or a pasted passage, for grammar, spelling, punctuation, and US
   academic style, preserving meaning, terminology, numbers, and structure. Every change
   comes back visible and numbered, so the author rejects the ones they do not want. Use
   when the author says "edit my English", "proofread this chapter", "fix my grammar",
@@ -15,7 +15,7 @@ compatibility: >-
   editable original gets a numbered list of changes rather than a marked-up document.
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Copy-edit my academic writing in US English
@@ -83,8 +83,8 @@ language edit goes wrong, and it is the one thing I will not catch by reading th
 
 ## How to mark the changes, by file type
 
-Never overwrite my original. Write a new file next to it: `thesis.docx` becomes
-`thesis_edited.docx`, `paper.tex` becomes `paper_edited.tex`. If that name is already taken,
+Never overwrite my original. Write a new file next to it: `draft.docx` becomes
+`draft_edited.docx`, `paper.tex` becomes `paper_edited.tex`. If that name is already taken,
 add a number to it. Never overwrite an edited file either. Number every change, and use the
 same numbers in the list you hand me, so I can point at one and say no. Never put one change
 inside another: I must be able to reject each one alone. A number stays with its change: a

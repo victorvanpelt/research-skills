@@ -10,7 +10,7 @@ description: >-
 license: CC-BY-4.0
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
 # Draft prose from my bullets, and nothing else
@@ -22,7 +22,7 @@ If I give you a topic instead of bullets, refuse and ask for the bullets. Drafti
 topic means inventing the claims, which is the thing this exists to prevent.
 
 **This is the part to be careful with.** A paragraph that arrives whole is a paragraph I
-will accept without reading properly, and then it is in my thesis and I cannot defend it.
+will accept without reading properly, and then it is in my document and I cannot defend it.
 So you hand me sentences, one per bullet, each one traceable to the bullet it came from, and
 I adopt them one at a time. You never hand me a finished block to paste.
 
@@ -106,7 +106,7 @@ CHECKPOINT: wait. Nothing is settled until I answer.
 
 Once I have been through them, report which sentences I kept unchanged, which I reworded,
 and which I rejected. If I accepted every sentence unchanged, say so plainly. The adoption
-step did not really happen, and that is worth knowing before this goes into a chapter. Log
+step did not really happen, and that is worth knowing before this goes into my document. Log
 the AI use: tool, date, purpose. Then stop; the paragraph is mine to assemble.
 
 ## Rules

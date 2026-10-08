@@ -7,6 +7,34 @@ can be compared against the current one.
 `research-defense-questions`, named in the 1.1.0 and 1.0.0 entries below, is no longer part
 of this repository.
 
+Until 2026-10-07 this repository was named `student-skills`. The old address redirects to
+`github.com/victorvanpelt/research-skills`.
+
+## 1.4.0, 2026-10-08
+
+**All nine skills.** The skills now speak to anyone who does research, with a student as
+one case among others. Wording that assumed a thesis, a supervisor, an examiner, or a marker
+now names the wider case: the author's document, the person who wrote the comment, a
+referee or an examiner. Lists of document kinds lead with the paper. No skill changes how
+it works, with one addition in the paper finder.
+
+- **research-paper-finder**: before it asks you anything, it looks at what your AI tool
+  already has for finding academic work and prefers, in this order, a paper-search tool or
+  connector that is already set up, an open index such as Crossref or OpenAlex, and plain
+  web search with page fetch. It needs no account of its own and never asks you for a login,
+  a key, or a password. Its first message says what it will search with, and the hand-over
+  says what it used. It no longer asks you for a journal list. It treats the journals on the
+  Financial Times 50 and those rated 4* or 4 in the ABS Academic Journal Guide as the
+  strongest, and uses a list of your own only where you gave one without being asked.
+- **research-feedback-reviser**: works on comments from anyone: referee reports, an editor's
+  letter, notes from a coauthor, a colleague, or a supervisor, seminar feedback. A question
+  about an unclear comment goes to the person who wrote it. The one-line record per item
+  serves whatever reply you owe: a response letter, a reply to a coauthor, a meeting.
+- **research-proposal-drafter**: now speaks of a research proposal for a paper or a thesis.
+  Length, sections, and steps are unchanged.
+- **research-text-humanizer**: the note on its sources now says that the 2025 study counted
+  abstracts and the 2026 follow-up counted full papers.
+
 ## 1.3.0, 2026-10-07
 
 **All nine skills.** The work between the first stop and the last one now runs in one

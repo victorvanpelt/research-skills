@@ -1,13 +1,14 @@
 ---
 name: research-proposal-drafter
 description: >-
-  Builds a one- to two-page thesis proposal from its author's own answers to three questions
-  (what the study tries to find out, why an answer matters and to whom, how it will be
-  found). Detects which kind of proposal it is from whether the data is already in hand,
+  Builds a one- to two-page research proposal for a paper or a thesis from its author's own
+  answers to three questions (what the study tries to find out, why an answer matters and
+  to whom, how it will be found). Detects which kind of proposal it is from whether the
+  data is already in hand,
   writes a short plan the author can redirect, finds and checks the references the argument
   needs, drafts against the plan, and has the draft reviewed and its facts audited before
   the author sees it. Use when
-  the author says "draft my thesis proposal", "help me write my proposal", "sharpen my
+  the author says "draft my research proposal", "help me write my proposal", "sharpen my
   research question", or "turn my research idea into a proposal". Refuses to invent a
   research question.
 license: CC-BY-4.0
@@ -16,20 +17,21 @@ compatibility: >-
   every reference as unchecked, and adds none.
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
-# Thesis proposal drafter
+# Research proposal drafter
 
-Produce a thesis proposal of 700 to 1,000 words (one to two A4 pages at 12 point with
+Produce a research proposal of 700 to 1,000 words (one to two A4 pages at 12 point with
 one-inch margins), counted without the reference list, in which the research question is
 mine, everything you propose is marked as yours, and every reference is real and in APA 7
 with its DOI link.
 
 A proposal argues what a study will find and why it matters. It never pretends to be the
-finished thesis. That is the one discipline this skill holds to hardest, and everything
-below points back to this paragraph rather than repeating it: never report results for data
-that does not exist yet, and never let the proposal grow into a results chapter.
+finished paper or thesis. That is the one discipline this skill holds to hardest, and
+everything below points back to this paragraph rather than repeating it: never report
+results for data that does not exist yet, and never let the proposal grow into a results
+section.
 
 I stop you twice: once when you say back what you think I asked, and once when the audited
 proposal comes back. Before the first stop you ask me for what you are missing; that is an
@@ -85,10 +87,11 @@ have the data in hand?** Three answers, three shapes:
   would have to be decided before it can be written, and offer to grow the proposal into one
   of the two shapes above once I have locked a design or the data arrives.
 
-In the same message, ask for anything else I already have: key references, a data source, my
-supervisor's constraints, a required template or length limit, who reads this and what they
-decide, and anything I have already ruled out so you do not propose it back to me. Ask once
-and wait for my answer. Then go to Gate 0 below.
+In the same message, ask for anything else I already have: key references, a data source,
+a required template or length limit, who reads this and what they decide, anything I have
+already ruled out so you do not propose it back to me, and any constraints set by a
+supervisor, a coauthor, or a funder. Ask once and wait for my answer. Then go to Gate 0
+below.
 
 If I give you a written draft instead of three separate answers, do not treat the draft as
 the proposal. Pull my answer to each question out of it and quote the sentences you pulled
@@ -133,7 +136,7 @@ where your tool can write files. Eight items, two or three lines each:
   and which audience cares.
 - **The tension**: the credible reason to expect the opposite result, written out. If you
   cannot write a defensible opposite prediction, say so here. A question whose answer
-  everybody already knows is a weak thesis, and now is when that is cheap to hear.
+  everybody already knows makes a weak study, and now is when that is cheap to hear.
 - **The design in one paragraph**: which of the three shapes this is, the data or the planned
   collection, the main test, and the key measure.
 - **The predictions in outline**: the two or three hypotheses, one clause each, so I can see
@@ -142,7 +145,7 @@ where your tool can write files. Eight items, two or three lines each:
   answer is nothing, flag it now.
 - **What it positions against**: the confirmed works the proposal will cite and one line on
   what this study does that they do not.
-- **What is deliberately out of scope**, and why: an analysis left to the full thesis, a
+- **What is deliberately out of scope**, and why: an analysis left to the full study, a
   literature not engaged, an extension the data cannot support.
 
 Close the plan with the calls that are mine and that I should overrule now rather than after

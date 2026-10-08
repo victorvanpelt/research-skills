@@ -1,13 +1,13 @@
 ---
 name: research-document-auditor
 description: >-
-  Audits any finished academic document, a thesis, a chapter, a research proposal, a
-  full paper, an essay, or a report, against the requirements its author states: every
+  Audits any finished academic document, a full paper, a research proposal, a chapter, a
+  thesis, an essay, or a report, against the requirements its author states: every
   reference checked, resolved, and in APA 7 with a working DOI link; every checkable
   fact and every claim that needs a source; numbers and statistics in the text against
   the tables; terms used the same way throughout; and claims that outrun the evidence.
   Every finding carries a severity and is confirmed by a second reader before the author
-  sees it. Use when the author says "audit my thesis", "check this before I submit",
+  sees it. Use when the author says "audit my paper", "check this before I submit",
   "verify my references and citations", "check my APA", or "check my chapter for
   inconsistencies". Not for improving the argument, not for language editing, not for
   deciding whether the work is good, and not for searching out new papers.
@@ -17,10 +17,10 @@ compatibility: >-
   reports those checks as not run rather than guessing.
 metadata:
   author: Victor van Pelt
-  version: 1.3.0
+  version: 1.4.0
 ---
 
-# The check before you hand it in
+# The check before you submit
 
 This runs once, near the end, when there is still time to fix what it finds. It reports.
 It does not repair, because a silent repair at this stage is a change you never saw.
@@ -39,7 +39,7 @@ before the report arrives; it just does not stop you.
 
 Take it and go. Run Check 1 below on its own, skip the intake and the memo, and say plainly
 in your first line that a reference check is all that ran and what the other five checks
-would have covered. Do not ask me for a thesis I did not offer. If I later want the rest,
+would have covered. Do not ask me for a document I did not offer. If I later want the rest,
 I will hand you the document.
 
 ## Intake
@@ -48,8 +48,8 @@ Take the document and whatever I gave with it, and ask only for what is missing,
 message. You need six things:
 
 1. The document, and anything it must be checked against: my data output, my reference
-   list, my supervisor's requirements.
-2. What the document is: a thesis, a chapter, a proposal, a paper, an essay, a report.
+   list, the requirements of a journal, a funder, or a supervisor.
+2. What the document is: a paper, a proposal, a chapter, a thesis, an essay, a report.
 3. The citation style it must follow. Where I name none, use APA 7 and say so.
 4. Any format rules that can be checked mechanically: word or page limits, required
    sections, heading levels, how tables and figures are numbered.
@@ -57,7 +57,7 @@ message. You need six things:
 6. Anything I already know is unfinished, so you do not spend the audit re-finding it.
 
 Where I give you no requirements, say which default you are using for each and let me
-correct it. Do not invent a set of rules from what a thesis usually looks like.
+correct it. Do not invent a set of rules from what such a document usually looks like.
 
 ## The memo
 
@@ -183,11 +183,11 @@ conclusion. A prediction phrased as a result.
 met or not met, with the measurement next to it: the word count against the limit, the
 sections present against the sections required.
 
-Give every finding a severity. Major: an examiner would count it against me, such as a
-reference that does not exist, a number that contradicts its table, or a claim the design
-cannot support. Medium: wrong, and fixed in a minute once seen, such as a wrong field in a
-reference, a missing DOI, or a table the text still calls by its old number. Minor: form
-only, such as a comma in a citation or an inconsistent decimal place.
+Give every finding a severity. Major: a referee or an examiner would count it against me,
+such as a reference that does not exist, a number that contradicts its table, or a claim
+the design cannot support. Medium: wrong, and fixed in a minute once seen, such as a wrong
+field in a reference, a missing DOI, or a table the text still calls by its old number.
+Minor: form only, such as a comma in a citation or an inconsistent decimal place.
 
 ## Review
 
@@ -235,7 +235,7 @@ re-check in a fresh pass.
 
 **Then one call is yours, not the reader's.** For every severity it named in question
 4, you adjust it or leave it, and you say at Gate 2 which ones you moved and which you
-left. How much a finding costs me is a judgment about my thesis and my examiner, and
+left. How much a finding costs me is a judgment about my document and its reader, and
 the definitions above are a guide to it, not a verdict on it.
 
 ## The report
@@ -302,7 +302,7 @@ CHECKPOINT: wait. Nothing is settled until I answer.
   from a pattern and never carried over unchecked from the document itself. Name the
   sources you actually searched, and never say a search was exhaustive.
 - **Do not soften.** This is the last moment anything can be caught. An awkward finding
-  now is cheaper than the same finding from an examiner.
+  now is cheaper than the same finding from a referee or an examiner.
 - **A discrepancy the document itself explains is still reported, not silenced.** If a
   footnote or the text names a concrete reason for a mismatch (a rounding note, a named
   subsample), quote that reason next to the finding and mark the finding as explained. A
